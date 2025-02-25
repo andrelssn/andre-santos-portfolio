@@ -2,4 +2,5 @@
     position: fixed !important;
     padding: 10px 5px !important;
     background-color: var(--header) !important;
+    box-shadow: none !important;
 }

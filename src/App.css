@@ -1,11 +1,12 @@
 
 
 body {
-  background: #3B3B3B !important;
+  background: #1b1e27 !important;
 }
 
 :root {
-  --header:             	#333333;
+  --header:             	#32353f;
+  --page:                 #ffffff;
   --red-system:           #e41c1c;
   --red-system-strong:    #681010;
   --red-system-light:     #df8181;

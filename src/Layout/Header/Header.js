@@ -33,7 +33,7 @@ export default function Header() {
                 {pageName}
             </Typography>
 
-            <Box sx={{ ml: 3, display: "flex", alignItems: "center" }}>
+            <Box sx={{ mt: 1, ml: 3, display: "flex", alignItems: "center" }}>
                 <Tabs value={selectedTab} onChange={handleChange} sx={tabSx}>
                     <Tab label="Home" value={"home"}/>
                     <Tab label="Skills" value={"skills"}/>

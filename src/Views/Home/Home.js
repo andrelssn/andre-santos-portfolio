@@ -1,10 +1,11 @@
+import { Container, Paper } from "@mui/material";
 
-
+import "./Style.css";
 
 export default function Home() {
     return (
-        <div>
+        <main className="home-container">
             Hello world
-        </div>
+        </main>
     );
 }

@@ -1,8 +1,14 @@
 
 
-
+body {
+  background: #1b1e27 !important;
+}
 
 :root {
-  --header:    #ffffff;
-  --main-text: #1f1f1f;
+  --header:             	#32353f;
+  --page:                 #ffffff;
+  --red-system:           #e41c1c;
+  --red-system-strong:    #681010;
+  --red-system-light:     #df8181;
+  --main-text:            #0f0f0f;
 }

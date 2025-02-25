@@ -1,8 +1,8 @@
+import React from "react";
 import { AppBar, Box, Tab, Tabs, Typography } from "@mui/material";
 
 // Style
 import "./Style.css";
-import React from "react";
 
 export default function Header() {
     const [selectedTab, setSelectedTab] = React.useState("home");

@@ -10,6 +10,7 @@ import "./Style.css";
 
 // Prop
 import { tabSx } from "../../Components/Props/Styles";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     const [selectedTab, setSelectedTab] = React.useState("home");
@@ -29,16 +30,18 @@ export default function Header() {
 
     return (
         <AppBar className="header-bar">
-            <Typography color="#ffffff" fontSize={20} fontWeight={"bold"} borderBottom={"2px solid #0f0f0f"} p={"0px 10px"} pb={1}>
+            <Typography color="#ffffff" fontSize={20} fontWeight={"bold"} borderBottom={"2px solid #0f0f0f"} p={"12px 10px"}>
                 {pageName}
             </Typography>
 
             <Box sx={{ mt: 1, ml: 3, display: "flex", alignItems: "center" }}>
                 <Tabs value={selectedTab} onChange={handleChange} sx={tabSx}>
-                    <Tab label="Home" value={"home"}/>
-                    <Tab label="Skills" value={"skills"}/>
-                    <Tab label="Contact" value={"contact"}/>
-                    <Tab label="Social" value={"social-media"}/>
+                    <Tab label="Home" value={"home"} LinkComponent={Link} to={"/"}/>
+                    <Tab label="About me" value={"about"} LinkComponent={Link} to={"/about"}/>
+                    <Tab label="Skills" value={"skills"} LinkComponent={Link} to={"/skills"}/>
+                    <Tab label="Education" value={"education"} LinkComponent={Link} to={"/education"}/>
+                    <Tab label="Experience" value={"experience"} LinkComponent={Link} to={"/experience"}/>
+                    <Tab label="Contact" value={"contact"} LinkComponent={Link} to={"/contact"}/>
                 </Tabs>
 
                 <Box sx={{ display: "inline-flex", position: "absolute", right: 0 }}>

@@ -1,8 +1,27 @@
 .home-container {
+    display: flex !important;
     position: relative !important;
     justify-self: center !important;
     width: 95% !important;
     margin-top: 30px !important;
-    background-color: var(--page) !important;
-    box-shadow: 0px 0px 8px 2px black !important;
+    border: 3px solid var(--header) !important;
+    border-radius: 6px !important;
+}
+
+.left-side {
+    width: 30% !important;
+    padding: 40px 0px !important;
+    background-color: #131418 !important;
+}
+
+.right-side {
+    width: 70% !important;
+    background-color: rgba(109, 107, 107, 0.473) !important;
+}
+
+.img-style {
+    width: 250px !important;
+    height: 250px !important;
+    margin-bottom: 10px !important;
+    border-radius: 100% !important;
 }

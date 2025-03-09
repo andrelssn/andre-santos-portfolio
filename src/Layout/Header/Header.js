@@ -12,21 +12,13 @@ import "./Style.css";
 import { tabSx } from "../../Components/Props/Styles";
 import { Link } from "react-router-dom";
 
-export default function Header() {
-    const [selectedTab, setSelectedTab] = React.useState("home");
-    const [pageName, setPageName]       = React.useState("Olá! Seja Bem-Vindo!");
+export default function Header(params) {
 
-    const handleChange = (event, newValue) => {
-        setSelectedTab(newValue);
-
-        if(newValue === "home"){
-            setPageName("Olá! Seja Bem-Vindo!")
-        }
-
-        if(newValue === "skills"){
-            setPageName("Conheça minhas qualificações")
-        }
-    };
+    const {
+        selectedTab,
+        pageName,
+        handleChange
+    } = params;
 
     return (
         <AppBar className="header-bar">

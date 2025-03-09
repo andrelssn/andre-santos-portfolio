@@ -1,7 +1,10 @@
-import { Box, Container, Fade, Paper, Typography } from "@mui/material";
+import { Box, Fade, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
+// Style
 import "./Style.css";
 
+// IMG
 import image from "../../images/andre.jpeg";
 
 export default function Home() {
@@ -22,7 +25,27 @@ export default function Home() {
                 </Box>
 
                 <Box className="right-side">
-                    a
+                    <section className="section-home">
+                        <p> Olá! Muito prazer, eu sou André Santos - Desenvolvedor de Software </p>
+
+                        <p>
+                            Sou um Desenvolvedor de Software apaixonado, com 2 anos de experiência na área criando soluções inovadoras e eficientes para os usuários. Minha especialidade no momento
+                            segue sendo na área de Desenvolvimento Web Full-Stack, onde eu atuo em estágio na Samsung R&D Brazil.
+                        </p>
+
+                        <p>
+                            Meus principais conhecimentos são com <span style={{ color: "#b89f21" }}>JavaScript</span>, <span style={{ color: "#2d90d6" }}>ReactJS</span>, <span style={{ color: "#60788a" }}>PHP</span> e <span style={{ color: "#406e50" }}>NodeJS</span>,
+                            mas clicando <Link className="link-fix" to={"/skills"}>aqui</Link>, você poderá ver o resumo completo de minhas qualificações.
+                        </p>
+
+                        <p>
+                            No meu dia a dia, estou sempre estudando ou pesquisando novas tecnologias. Sou empenhado em melhorar continuamente o meu trabalho, garantindo que esteja sempre apto a atuar ativamente neste mercado.
+                        </p>
+
+                        <p>
+                            Agora, convido você a explorar meu portfólio. Atualmente, é apenas a primeira versão, mas pretendo atualizá-lo no futuro com novas tecnologias, além de incluir novos projetos pessoais e habilidades.
+                        </p>
+                    </section>
                 </Box>
             </nav>
         </Fade>

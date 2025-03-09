@@ -5,9 +5,9 @@ import MainRouter from "./Router/MainRouter";
 
 function App() {
   	return (
-    	<main>
+    	<body>
 			<MainRouter/>
-		</main>
+		</body>
   	);
 }
 

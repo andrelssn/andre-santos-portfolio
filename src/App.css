@@ -1,7 +1,8 @@
 
 
 body {
-  background: #1b1e27 !important;
+  height: 100vh !important;
+  background: linear-gradient(#141414 10%, #393c47 50%, #393c47 50%, #141414 100%) !important;
 }
 
 :root {
@@ -11,4 +12,9 @@ body {
   --red-system-strong:    #681010;
   --red-system-light:     #df8181;
   --main-text:            #f3f3f3;
+}
+
+.link-fix {
+  color: #71bafd !important;
+  text-decoration: none;
 }

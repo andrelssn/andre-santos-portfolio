@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components
@@ -10,14 +11,29 @@ import Education from "../Views/Education/Education";
 import Experience from "../Views/Experience/Experience";
 
 export default function MainRouter() {
+    const [selectedTab, setSelectedTab] = React.useState("home");
+    const [pageName, setPageName]       = React.useState("Olá! Seja Bem-Vindo!");
+
+    const handleChange = (event, newValue) => {
+        setSelectedTab(newValue);
+
+        if(newValue === "home"){
+            setPageName("Olá! Seja Bem-Vindo!")
+        }
+
+        if(newValue === "skills"){
+            setPageName("Conheça minhas qualificações")
+        }
+    };
+
     return (
         <BrowserRouter>
-            <Header/>
+            <Header selectedTab={selectedTab} pageName={pageName} handleChange={handleChange}/>
 
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/skills" element={<Skills />} />
+                <Route path="/skills" element={<Skills handleChange={handleChange}/>} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/education" element={<Education />} />
                 <Route path="/experience" element={<Experience />} />

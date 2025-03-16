@@ -8,8 +8,8 @@ export default function Skills({handleChange}) {
     }, []);
 
     return (
-        <Box>
+        <div>
             Skills
-        </Box>
+        </div>
     );
 }

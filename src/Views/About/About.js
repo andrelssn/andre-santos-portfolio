@@ -12,7 +12,7 @@ export default function About() {
             <nav className="about-container">
                 <Box className="left-side">
                     <div style={{ display: "flex", justifySelf: "center" }}>
-                        <img src={image} className="img-style-about"/>
+                        <img src={image} className="img-style-about" alt=""/>
                     </div>
 
                     <Typography color="var(--main-text)" textAlign={"center"} fontWeight={"bold"}>

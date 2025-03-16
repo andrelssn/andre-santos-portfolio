@@ -1,0 +1,27 @@
+.skills-container {
+    display: flex !important;
+    position: relative !important;
+    justify-self: center !important;
+    width: 95% !important;
+    margin-top: 30px !important;
+    border: 3px solid var(--header) !important;
+    border-radius: 6px !important;
+}
+
+.left-side-skills {
+    width: 20% !important;
+    padding: 40px 0px !important;
+    background-color: #131418 !important;
+}
+
+.right-side-skills {
+    display: flex !important;
+    align-items: center !important;
+    width: 80% !important;
+    background-color: rgba(36, 35, 35, 0.397) !important;
+}
+
+.tab-button {
+    color: #fff;
+    font-weight: bold;
+}

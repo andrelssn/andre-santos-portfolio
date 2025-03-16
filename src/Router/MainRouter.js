@@ -21,8 +21,24 @@ export default function MainRouter() {
             setPageName("Olá! Seja Bem-Vindo!")
         }
 
+        if(newValue === "about"){
+            setPageName("Conheça mais sobre mim!")
+        }
+
         if(newValue === "skills"){
-            setPageName("Conheça minhas qualificações")
+            setPageName("Conheça minhas qualificações.")
+        }
+
+        if(newValue === "education"){
+            setPageName("Uma visão geral de minha trilha acadêmica.")
+        }
+
+        if(newValue === "experience"){
+            setPageName("Saiba mais sobre minhas experiências.")
+        }
+
+        if(newValue === "contact"){
+            setPageName("Gostaria de entrar em contato? Veja os meios.")
         }
     };
 

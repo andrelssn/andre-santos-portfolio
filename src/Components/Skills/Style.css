@@ -1,0 +1,19 @@
+.skill-container {
+    position: relative !important;
+    margin: auto !important;
+}
+
+.nav-box {
+    color: #fff !important;
+    display: grid;
+    margin: 50px 70px;
+    padding: 50px;
+    max-width: 100px !important;
+    background: linear-gradient(#524d88, #2f3349) !important;
+    border-radius: 100px;
+}
+
+.icons-skills {
+    width: 100px !important;
+    margin-bottom: 20px;
+}

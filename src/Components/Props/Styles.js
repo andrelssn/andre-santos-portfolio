@@ -1,18 +1,17 @@
 export const tabSx = {
     "& .MuiTabs-indicator": {
-        backgroundColor: "#ffffff",
+        backgroundColor: "#7f5af0",
     },
     "& .MuiButtonBase-root.MuiTab-root": {
-        color: "#cecece",
+        color: "#fffffe",
         fontWeight: "bold",
         transition: "color 0.2s ease-in-out",
         "&:hover": {
-            color: "#ffffff",
+            color: "#7f5af0",
         },
         "&.Mui-selected": {
-            color: "#ffffff",
+            color: "#7f5af0",
             fontWeight: "bold",
-            textShadow: " 0 0 3px #ffffff, 0 0 1px #ffffff"
         },
     },
 };

@@ -7,6 +7,9 @@ import "./Style.css";
 import image from "../../images/andre2.jpg";
 
 export default function About() {
+
+    if(!image) return null;
+
     return (
         <Fade in={true}>
             <nav className="about-container">

@@ -1,5 +1,5 @@
 import React from "react";
-import {Fade, MenuItem, TextField, Typography } from "@mui/material";
+import {CircularProgress, Fade, MenuItem, TextField, Typography } from "@mui/material";
 
 // img
 import api from "../../images/certificates/apis.jpg";
@@ -26,6 +26,8 @@ const certificates = [
 
 export default function Certificates() {
     const [option, setOption] = React.useState(null);
+
+    if(!api || !codeigniter || !github || !php || !sql || !teambuilding || !wiseup) return <CircularProgress sx={{ margin: "auto" }}/>;
 
     return (
         <Fade in={true}>

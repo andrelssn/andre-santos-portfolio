@@ -1,0 +1,32 @@
+.experience-container {
+    display: flex !important;
+    position: relative !important;
+    justify-self: center !important;
+    width: 90% !important;
+    margin-top: 30px !important;
+    padding: 30px 20px;
+    border: 3px solid var(--header) !important;
+    border-radius: 6px !important;
+    background-color: rgba(36, 35, 35, 0.397) !important;
+}
+
+.experience-section {
+    width: 90%;
+    margin: auto;
+    padding: 20px 35px;
+    background-color: var(--header) !important;
+    border-radius: 15px;
+}
+
+.experience-section span {
+    color: var(--main-text);
+}
+
+.job-information-box {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.ul-list {
+    color: var(--main-text) !important;
+}

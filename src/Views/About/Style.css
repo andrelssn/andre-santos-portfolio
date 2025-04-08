@@ -1,28 +1,32 @@
 .about-container {
-    display: flex !important;
     position: relative !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
     justify-self: center !important;
     width: 95% !important;
     margin-top: 30px !important;
     border: 3px solid var(--header) !important;
     border-radius: 6px !important;
+    overflow: auto !important;
 }
 
 .left-side {
-    width: 30% !important;
+    flex: 1 !important;
+    min-width: 300px !important;
     padding: 40px 0px !important;
     background-color: #131418 !important;
 }
 
 .right-side-about {
-    width: 70% !important;
+    flex: 1 !important;
+    min-width: 300px !important;
     background-color: rgba(36, 35, 35, 0.397) !important;
 }
 
 .img-style-about {
     margin: auto !important;
-    width: 50% !important;
-    height: 50% !important;
+    width: 270px !important;
+    height: 400px !important;
     margin-bottom: 10px !important;
     border-radius: 10% !important;
     border: 3px solid rgb(73, 73, 73);

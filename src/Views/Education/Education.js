@@ -19,7 +19,7 @@ export default function Education() {
                     <span>2021 - 2025</span>
                 </section>
 
-                <section className="education-section" style={{ marginLeft: 20 }}>
+                <section className="education-section">
                     <Typography fontSize={26} color="var(--main-text)">
                         Ensino Médio & Fundamental
                     </Typography>

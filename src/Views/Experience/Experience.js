@@ -14,14 +14,14 @@ export default function Experience() {
                     <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
 
                     <div className="job-information-box">
-                        <div>
+                        <div className="info-section-job" style={{ maxWidth: 200 }}>
                             <span style={{ fontWeight: "bold" }}>Samsung R&D Brasil</span><br/>
                             <span>Estágio</span><br/>
                             <span>Campinas, São Paulo</span><br/>
                             <span>Jun/2023 - At the moment</span>
                         </div>
 
-                        <div style={{ marginLeft: 25, paddingLeft: 10, borderLeft: "1px solid var(--main-text)" }}>
+                        <div className="info-section-job" style={{ paddingLeft: 10, borderLeft: "1px solid var(--main-text)" }}>
                             <ul className="ul-list">
                                 <li>
                                     Práticas de desenvolvimento full-stack, tendo como principal ferramenta para front-end o ReactJS, e o back-end sendo feito com PHP e Laravel.
@@ -41,7 +41,7 @@ export default function Experience() {
                             </ul>
                         </div>
 
-                        <div style={{ marginLeft: 25, paddingLeft: 10, borderLeft: "1px solid var(--main-text)", maxWidth: 200 }}>
+                        <div className="info-section-job" style={{ paddingLeft: 10, borderLeft: "1px solid var(--main-text)", maxWidth: 200 }}>
                             <span style={{ fontWeight: "bold" }}>Competências</span><br/>
                             <span>JavaScript, ReactJS, HTML & CSS, PHP, MySQL, NodeJS, Laravel, CodeIgniter, UX/UI, API Rest, JIRA</span>
                         </div>

@@ -1,20 +1,26 @@
 .skill-container {
     position: relative !important;
     margin: auto !important;
+    overflow: auto !important;
 }
 
 .certificates-container {
-    width: 100%;
+    position: relative !important;
+    margin: auto !important;
+    overflow: auto !important;
 }
 
 .nav-box {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     color: #fff !important;
-    display: grid;
-    margin: 50px 70px;
-    padding: 50px;
-    max-width: 100px !important;
-    background: linear-gradient(#524d88, #2f3349) !important;
-    border-radius: 100px;
+    margin: 40px;
+    padding: 20px 50px;
+    max-width: 200px !important;
+    border: 1px solid #707070;
+    border-radius: 3px;
 }
 
 .icons-skills {

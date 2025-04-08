@@ -26,8 +26,8 @@ export default function Header(params) {
                 {pageName}
             </Typography>
 
-            <Box sx={{ mt: 1, ml: 3, display: "flex", alignItems: "center" }}>
-                <Tabs value={selectedTab} onChange={handleChange} sx={tabSx}>
+            <Box sx={{ mt: 1, ml: 1, display: "flex", alignItems: "center" }}>
+                <Tabs variant="scrollable" scrollButtons allowScrollButtonsMobile value={selectedTab} onChange={handleChange} sx={tabSx}>
                     <Tab label="Home" value={"home"} LinkComponent={Link} to={"/"}/>
                     <Tab label="About me" value={"about"} LinkComponent={Link} to={"/about"}/>
                     <Tab label="Skills" value={"skills"} LinkComponent={Link} to={"/skills"}/>
@@ -36,8 +36,8 @@ export default function Header(params) {
                     <Tab label="Contact" value={"contact"} LinkComponent={Link} to={"/contact"}/>
                 </Tabs>
 
-                <Box sx={{ display: "inline-flex", position: "absolute", right: 0 }}>
-                    <IconButton title="linkedin">
+                <Box sx={{ display: "flex", float: "right"}}>
+                    <IconButton href="https://www.linkedin.com/in/andresantosdev/" title="linkedin">
                         <LinkedInIcon sx={{ color: "#ffffff" }}/>
                     </IconButton>
 

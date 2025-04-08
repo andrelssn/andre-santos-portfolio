@@ -19,44 +19,40 @@ export default function Tech() {
     return (
         <Fade in={true}>
             <div className="skill-container">
-                <div style={{ display: "flex" }}>
-                    <div className="nav-box">
-                        <img src={react} alt="react" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>React</Typography>
-                    </div>
-
-                    <div className="nav-box">
-                        <img src={laravel} alt="laravel" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>Laravel Framework</Typography>
-                    </div>
-
-                    <div className="nav-box">
-                        <img src={codeigniter} alt="codeigniter" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>Codeigniter Framework</Typography>
-                    </div>
-                </div>
-
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
                     <div className="nav-box">
                         <img src={node} alt="node" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>Node</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Node</Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={api} alt="api" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>API Rest</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>API Rest</Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={json} alt="json" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>JSON</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>JSON</Typography>
                     </div>
-                </div>
 
-                <div style={{ display: "flex" }}>
                     <div className="nav-box">
                         <img src={mysql} alt="mysql" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>MySQL</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>MySQL</Typography>
+                    </div>
+
+                    <div className="nav-box">
+                        <img src={react} alt="react" className="icons-skills"/>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>React</Typography>
+                    </div>
+
+                    <div className="nav-box">
+                        <img src={laravel} alt="laravel" className="icons-skills"/>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Laravel Framework</Typography>
+                    </div>
+
+                    <div className="nav-box">
+                        <img src={codeigniter} alt="codeigniter" className="icons-skills"/>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Codeigniter Framework</Typography>
                     </div>
                 </div>
             </div>

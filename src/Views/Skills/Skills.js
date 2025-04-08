@@ -10,19 +10,18 @@ import SkillLanguage from "../../Components/Skills/SkillLanguage";
 
 const tabSx = {
     "& .MuiTabs-indicator": {
-        backgroundColor: "#ffffff",
+        backgroundColor: "var(--purple)",
     },
     "& .MuiButtonBase-root.MuiTab-root": {
         color: "#cecece",
         fontWeight: "bold",
         transition: "color 0.2s ease-in-out",
         "&:hover": {
-            color: "#ffffff",
+            color: "var(--purple)",
         },
         "&.Mui-selected": {
-            color: "#ffffff",
+            color: "var(--purple)",
             fontWeight: "bold",
-            textShadow: " 0 0 3px #ffffff, 0 0 1px #ffffff",
             backgroundColor: "var(--test)"
         },
     },
@@ -42,13 +41,17 @@ export default function Skills({handleChange}) {
 
     return (
         <Fade in={true}>
-            <nav className="skills-container">
+            <div className="skills-container">
                 <Box className="left-side-skills">
                     <Tabs
-                        orientation="vertical"
+                        orientation="horizontal"
                         value={value}
                         onChange={handleChangeTab}
                         sx={tabSx}
+                        variant="scrollable"
+                        scrollButtons
+                        allowScrollButtonsMobile
+                        TabScrollButtonProps={{ style: { color: "var(--purple)" } }}
                     >
                         <Tab label="Linguagens de Programação" className="tab-button"/>
                         <Tab label="Tecnologias e Ferramentas" className="tab-button"/>
@@ -61,7 +64,7 @@ export default function Skills({handleChange}) {
                     { value === 1 ? ( <Tech/> ) : <></> }
                     { value === 2 ? ( <Certificates/> ) : <></> }
                 </Box>
-            </nav>
+            </div>
         </Fade>
     );
 }

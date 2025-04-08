@@ -1,6 +1,4 @@
 .experience-container {
-    display: flex !important;
-    position: relative !important;
     justify-self: center !important;
     width: 90% !important;
     margin-top: 30px !important;
@@ -8,14 +6,15 @@
     border: 3px solid var(--header) !important;
     border-radius: 6px !important;
     background-color: rgba(36, 35, 35, 0.397) !important;
+    overflow: auto !important;
 }
 
 .experience-section {
-    width: 90%;
     margin: auto;
-    padding: 20px 35px;
+    padding: 20px 30px;
     background-color: var(--header) !important;
     border-radius: 15px;
+    overflow: auto !important;
 }
 
 .experience-section span {
@@ -23,10 +22,18 @@
 }
 
 .job-information-box {
+    position: relative !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
     display: flex !important;
     align-items: center !important;
 }
 
 .ul-list {
     color: var(--main-text) !important;
+}
+
+.info-section-job {
+    flex: 1 !important;
+    min-width: 300px;
 }

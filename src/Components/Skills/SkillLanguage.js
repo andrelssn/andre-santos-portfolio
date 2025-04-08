@@ -15,20 +15,20 @@ export default function SkillLanguage() {
     return (
         <Fade in={true}>
             <div className="skill-container">
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
                     <div className="nav-box">
                         <img src={js} alt="js" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>JavaScript</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>JavaScript</Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={php} alt="php" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>PHP</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>PHP</Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={c} alt="c/c++" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"}>C/C++</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>C/C++</Typography>
                     </div>
                 </div>
             </div>

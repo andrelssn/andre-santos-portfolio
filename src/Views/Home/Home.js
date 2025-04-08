@@ -10,7 +10,7 @@ import image from "../../images/andre.jpeg";
 export default function Home() {
     return (
         <Fade in={true}>
-            <nav className="home-container">
+            <div className="home-container">
                 <Box className="left-side">
                     <div style={{ display: "flex", justifySelf: "center" }}>
                         <img src={image} className="img-style"/>
@@ -47,7 +47,7 @@ export default function Home() {
                         </p>
                     </section>
                 </Box>
-            </nav>
+            </div>
         </Fade>
     );
 }

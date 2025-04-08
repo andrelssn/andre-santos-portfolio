@@ -12,7 +12,7 @@ export default function About() {
 
     return (
         <Fade in={true}>
-            <nav className="about-container">
+            <div className="about-container">
                 <Box className="left-side">
                     <div style={{ display: "flex", justifySelf: "center" }}>
                         <img src={image} className="img-style-about" alt=""/>
@@ -48,7 +48,7 @@ export default function About() {
                         </p>
                     </section>
                 </Box>
-            </nav>
+            </div>
         </Fade>
     );
 }

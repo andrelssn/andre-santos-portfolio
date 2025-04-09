@@ -33,18 +33,24 @@ export default function About() {
                         </Typography>
 
                         <p>
-                            Desde criança, sempre me fascinei pelo mundo da programação. Lembro de jogar video-games e me perguntar: "Como será que fazem esses jogos e programas?" Essa curiosidade cresceu com o tempo, até que finalmente decidi explorar essa área.
-                            Ao me aprofundar, descobri coisas incríveis, desde a criação de sites até o desenvolvimento de softwares complexos. Mergulhei de cabeça no universo da programação, e a cada dia me surpreendo mais com as possibilidades e a criatividade que ela permite.
+                            Desde criança, sempre fui fascinado por programação.
+                            Jogava video-games e me perguntava como os programas eram criados.
                         </p>
 
                         <p>
-                            Comecei do básico. Sim, como a maioria, minha primeira linguagem de programação foi C. No início, fiquei extremamente assustado e imaginando diversas formas de fugir disso (risos). No entanto, depois que finalmente entendi sobre lógica de programação e algoritmos, tudo pareceu clarear na minha mente, tornando as aulas de programação mais simples de entender.
-                            A partir desse momento, iniciei minha jornada na programação web full-stack. Sempre me interessei por web design e, quando tive meu primeiro contato com React JS, fiquei maravilhado. Continuei estudando e aprendendo sobre o assunto, o que me ajudou bastante a seguir a carreira full-stack foi meu estágio na Samsung R&D, onde atuo ativamente com Front-End e Back-End.
-                            Embora eu tenha deixado a linguagem C de lado, ainda a utilizo ocasionalmente e tenho planos de aprender outras linguagens, como Java, Kotlin, Swift, entre outras.
+                            Com o tempo, essa curiosidade cresceu.
+                            Comecei com C/C++, assustador no início, mas tudo fez sentido ao entender lógica e algoritmos.
                         </p>
 
                         <p>
-                            E agora cá estou eu, continuamente aprimorando meu trabalho e minhas habilidades para entregar sempre os melhores resultados aos clientes com quem trabalho!
+                            Logo, me interessei por desenvolvimento web e me apaixonei por React JS.
+                            Meu estágio na Samsung R&D foi essencial para minha jornada como full-stack,
+                            trabalhando tanto no Front-End quanto no Back-End.
+                        </p>
+
+                        <p>
+                            Hoje, continuo aprimorando minhas habilidades e explorando novas linguagens,
+                            sempre buscando entregar os melhores resultados aos clientes!
                         </p>
                     </section>
                 </Box>

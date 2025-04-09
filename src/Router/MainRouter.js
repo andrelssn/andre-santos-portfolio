@@ -38,7 +38,7 @@ export default function MainRouter() {
         }
 
         if(newValue === "contact"){
-            setPageName("Gostaria de entrar em contato? Veja os meios.")
+            setPageName("Vamos criar soluções inovadoras juntos?")
         }
     };
 

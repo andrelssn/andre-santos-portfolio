@@ -17,10 +17,14 @@
     align-items: center !important;
     color: #fff !important;
     margin: 40px;
-    padding: 20px 50px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
     max-width: 200px !important;
-    border: 1px solid #707070;
-    border-radius: 3px;
+    background-color: var(--header);
+    border-radius: 36px;
+    box-shadow: 3px 3px 20px -5px #00000080 !important;
 }
 
 .icons-skills {

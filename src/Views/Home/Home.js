@@ -41,8 +41,6 @@ export default function Home() {
                         <p>
                             No meu dia a dia, estou sempre estudando ou pesquisando novas tecnologias. Sou empenhado em melhorar continuamente o meu trabalho, garantindo que esteja sempre apto a atuar ativamente neste mercado.
                         </p>
-
-                     
                     </section>
                 </Box>
             </div>

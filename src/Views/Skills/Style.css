@@ -9,7 +9,7 @@
     border-radius: 36px !important;
 }
 
-.left-side-skills {
+.up-side-skills {
     flex: 1 !important;
     justify-self: center !important;
     max-width: 100% !important;
@@ -17,7 +17,7 @@
     overflow: auto !important;
 }
 
-.right-side-skills {
+.bottom-side-skills {
     display: flex !important;
     flex-wrap: wrap !important;
     flex: 1 !important;

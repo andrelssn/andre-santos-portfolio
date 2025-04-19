@@ -28,12 +28,14 @@ export default function Header(params) {
 
             <Box sx={{ mt: 1, ml: 1, display: "flex", alignItems: "center" }}>
                 <Tabs variant="scrollable" scrollButtons allowScrollButtonsMobile value={selectedTab} onChange={handleChange} sx={tabSx}>
-                    <Tab label="Home" value={"home"} LinkComponent={Link} to={"/"}/>
-                    <Tab label="About me" value={"about"} LinkComponent={Link} to={"/about"}/>
-                    <Tab label="Skills" value={"skills"} LinkComponent={Link} to={"/skills"}/>
-                    <Tab label="Education" value={"education"} LinkComponent={Link} to={"/education"}/>
-                    <Tab label="Experience" value={"experience"} LinkComponent={Link} to={"/experience"}/>
-                    <Tab label="Contact" value={"contact"} LinkComponent={Link} to={"/contact"}/>
+                    <Tab label="Início" value={"home"} LinkComponent={Link} to={"/"}/>
+                    <Tab label="Sobre Mim" value={"about"} LinkComponent={Link} to={"/about"}/>
+                    <Tab label="Habilidades" value={"skills"} LinkComponent={Link} to={"/skills"}/>
+                    <Tab label="Educação" value={"education"} LinkComponent={Link} to={"/education"}/>
+                    <Tab label="Experiências" value={"experience"} LinkComponent={Link} to={"/experience"}/>
+                    <Tab label="Projetos" value={"projects"} LinkComponent={Link} to={"/projects"}/>
+                    <Tab label="Reconhecimentos" value={"recognitions"} LinkComponent={Link} to={"/recognitions"}/>
+                    <Tab label="Contato" value={"contact"} LinkComponent={Link} to={"/contact"}/>
                 </Tabs>
 
                 <Box sx={{ display: "flex", float: "right"}}>

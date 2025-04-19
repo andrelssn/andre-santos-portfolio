@@ -1,12 +1,13 @@
 import React from "react";
-import { Box, Fade, Tab, Tabs, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Box, Fade, Tab, Tabs } from "@mui/material";
 
 // Style
 import "./Style.css";
+
+// Components
 import Tech from "../../Components/Skills/Tech";
-import Certificates from "../../Components/Skills/Certificates";
 import SkillLanguage from "../../Components/Skills/SkillLanguage";
+import SoftSkills from "../../Components/Skills/SoftSkills";
 
 const tabSx = {
     "& .MuiTabs-indicator": {
@@ -27,7 +28,6 @@ const tabSx = {
     },
 };
 
-
 export default function Skills({handleChange}) {
     const [value, setValue] = React.useState(0);
 
@@ -42,7 +42,7 @@ export default function Skills({handleChange}) {
     return (
         <Fade in={true}>
             <div className="skills-container">
-                <Box className="left-side-skills">
+                <Box className="up-side-skills">
                     <Tabs
                         orientation="horizontal"
                         value={value}
@@ -55,14 +55,14 @@ export default function Skills({handleChange}) {
                     >
                         <Tab label="Linguagens de Programação" className="tab-button"/>
                         <Tab label="Tecnologias e Ferramentas" className="tab-button"/>
-                        <Tab label="Certificações" className="tab-button"/>
+                        <Tab label="Soft Skills" className="tab-button"/>
                     </Tabs>
                 </Box>
 
-                <Box className="right-side-skills">
+                <Box className="bottom-side-skills">
                     { value === 0 ? ( <SkillLanguage/> ) : <></> }
                     { value === 1 ? ( <Tech/> ) : <></> }
-                    { value === 2 ? ( <Certificates/> ) : <></> }
+                    { value === 2 ? ( <SoftSkills /> ) : <></> }
                 </Box>
             </div>
         </Fade>

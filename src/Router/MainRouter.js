@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 // Components
 import Header from "../Layout/Header/Header";
@@ -11,35 +11,55 @@ import Education from "../Views/Education/Education";
 import Experience from "../Views/Experience/Experience";
 
 export default function MainRouter() {
-    const [selectedTab, setSelectedTab] = React.useState("home");
+    const [selectedTab, setSelectedTab] = React.useState(null);
     const [pageName, setPageName]       = React.useState("Olá! Seja Bem-Vindo!");
+
+    React.useEffect(() => {
+        const path = window.location.pathname.substring(0);
+
+        if(path === "/"){
+            setPageName("Olá! Seja Bem-Vindo!")
+            setSelectedTab("home");
+        }
+
+        if(path === "/about"){
+            setPageName("Conheça mais sobre mim!")
+            setSelectedTab("about");
+        }
+
+        if(path === "/skills"){
+            setPageName("Conheça minhas qualificações.")
+            setSelectedTab("skills");
+        }
+
+        if(path === "/education"){
+            setPageName("Uma visão geral de minha trilha acadêmica.")
+            setSelectedTab("education");
+        }
+
+        if(path === "/experience"){
+            setPageName("Saiba mais sobre minhas experiências.")
+            setSelectedTab("experience");
+        }
+
+        if(path === "/projects"){
+            setPageName("Vamos criar soluções inovadoras juntos?")
+            setSelectedTab("projects");
+        }
+
+        if(path === "/recognitions"){
+            setPageName("Vamos criar soluções inovadoras juntos?")
+            setSelectedTab("recognitions");
+        }
+
+        if(path === "/contact"){
+            setPageName("Vamos criar soluções inovadoras juntos?")
+            setSelectedTab("contact");
+        }
+    }, [selectedTab]);
 
     const handleChange = (event, newValue) => {
         setSelectedTab(newValue);
-
-        if(newValue === "home"){
-            setPageName("Olá! Seja Bem-Vindo!")
-        }
-
-        if(newValue === "about"){
-            setPageName("Conheça mais sobre mim!")
-        }
-
-        if(newValue === "skills"){
-            setPageName("Conheça minhas qualificações.")
-        }
-
-        if(newValue === "education"){
-            setPageName("Uma visão geral de minha trilha acadêmica.")
-        }
-
-        if(newValue === "experience"){
-            setPageName("Saiba mais sobre minhas experiências.")
-        }
-
-        if(newValue === "contact"){
-            setPageName("Gostaria de entrar em contato? Veja os meios.")
-        }
     };
 
     return (

@@ -41,10 +41,6 @@ export default function Home() {
                         <p>
                             No meu dia a dia, estou sempre estudando ou pesquisando novas tecnologias. Sou empenhado em melhorar continuamente o meu trabalho, garantindo que esteja sempre apto a atuar ativamente neste mercado.
                         </p>
-
-                        <p>
-                            Agora, convido você a explorar meu portfólio. Atualmente, é apenas a primeira versão, mas pretendo atualizá-lo no futuro com novas tecnologias, além de incluir novos projetos pessoais e habilidades.
-                        </p>
                     </section>
                 </Box>
             </div>

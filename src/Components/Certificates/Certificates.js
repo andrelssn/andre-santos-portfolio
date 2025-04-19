@@ -12,7 +12,7 @@ import wiseup from "../../images/certificates/wiseup.png";
 
 // Styles
 import "./Style.css";
-import { props, styleSx } from "./selectSx";
+import { props, styleSx } from "../Skills/selectSx";
 
 const certificates = [
     "APIs Nodejs, Express + MongoDB, SQL",
@@ -51,7 +51,7 @@ export default function Certificates() {
                 </div>
 
                 <div className="certificates-div">
-                    <Typography p={2} bgcolor={"#cecece"}>
+                    <Typography p={2} bgcolor={"var(--purple)"} color="#ffffff" fontWeight={"bold"}>
                         {!option ? "Select an option" : "Certificate"}
                     </Typography>
 

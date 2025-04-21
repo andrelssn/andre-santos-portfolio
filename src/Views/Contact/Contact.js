@@ -1,4 +1,4 @@
-import { Fade, Box, IconButton, Typography } from "@mui/material";
+import { Fade, IconButton, Typography } from "@mui/material";
 
 // Icons
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

@@ -9,6 +9,7 @@ import Skills from "../Views/Skills/Skills";
 import Contact from "../Views/Contact/Contact";
 import Education from "../Views/Education/Education";
 import Experience from "../Views/Experience/Experience";
+import Projects from "../Views/Projects/Projects";
 
 export default function MainRouter() {
     const [selectedTab, setSelectedTab] = React.useState(null);
@@ -73,6 +74,7 @@ export default function MainRouter() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/education" element={<Education />} />
                 <Route path="/experience" element={<Experience />} />
+                <Route path="/projects" element={ <Projects/> } />
             </Routes>
         </BrowserRouter>
     );

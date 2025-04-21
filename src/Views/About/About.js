@@ -4,7 +4,7 @@ import { Box, Fade, Typography } from "@mui/material";
 import "./Style.css";
 
 // IMG
-import image from "../../images/andre2.jpg";
+import image from "../../images/andreimage.jpg";
 
 export default function About() {
 

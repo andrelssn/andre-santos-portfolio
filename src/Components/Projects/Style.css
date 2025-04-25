@@ -1,0 +1,57 @@
+.projects-section {
+    margin: auto;
+    padding: 20px 30px;
+    flex-wrap: wrap !important;
+    margin: 30px !important;
+    background-color: var(--header) !important;
+    border-radius: 15px;
+    overflow: auto !important;
+}
+
+.projects-section span {
+    color: var(--main-text);
+}
+
+.job-information-box {
+    position: relative !important;
+    display: grid !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    width: 100% !important;
+}
+
+.ul-list {
+    color: var(--main-text) !important;
+}
+
+.info-section-job {
+    flex: 1 !important;
+    min-width: 300px;
+}
+
+.btn-projects {
+    color: #ffffff !important;
+    border: 2px solid #1B1B1E;
+    background-color: #1B1B1E !important;
+}
+
+.btn-projects:hover {
+    color: #ffffff !important;
+    border: 2px solid var(--purple);
+    background-color: #1B1B1E !important;
+}
+
+.btn-projects-selected {
+    color: var(--purple) !important;
+    border: 2px solid #1B1B1E;
+    background-color: #1B1B1E !important;
+}
+
+.collapse-container {
+    position: relative !important;
+    color: #ffffff !important;
+    width: 100% !important;
+    padding: 8px 0px !important;
+    background-color: #1B1B1E !important;
+    border-radius: 8px !important;
+}

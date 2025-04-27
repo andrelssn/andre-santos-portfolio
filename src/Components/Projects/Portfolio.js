@@ -1,11 +1,12 @@
 import React from "react";
-import { Fade, Typography, Button, Collapse, Box } from "@mui/material";
+import { Fade, Typography, Button, Collapse, Box, colors } from "@mui/material";
 
 // Style
 import "./Style.css";
 
 // Icon
 import webicon from "../../images/webicon.png";
+import LaunchIcon from '@mui/icons-material/Launch';
 
 export default function Portfolio(){
     const [openLog, setOpenLog]     = React.useState(false);
@@ -48,7 +49,7 @@ export default function Portfolio(){
                 </div>
 
 
-                <div className="job-information-box">
+                <div className="project-information-box">
                     <Collapse in={openLog}>
                         <div className="collapse-container">
                             <Box sx={{ borderLeft: "1px solid var(--purple)", p: 2, m: "5px 20px" }}>
@@ -63,7 +64,87 @@ export default function Portfolio(){
 
                     <Collapse in={openAbout}>
                         <div className="collapse-container">
-                            hello world
+                            <Box sx={{ p: 2, m: "5px 20px" }}>
+                                <div>
+                                    <Typography variant="h6">
+                                        Tecnologias Utilizadas
+                                    </Typography>
+
+                                    <ul>
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>JavaScript</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>React JS</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>Material UI v6</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>React Router Dom</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>i18n (Translate)</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>HTML & CSS</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>Visual Studio Code</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>Git</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <br/>
+
+                                <div>
+                                    <Typography variant="h6">
+                                        Tempo de Desenvolvimento
+                                    </Typography>
+
+                                    <ul>
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>4 meses</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <br/>
+
+                                <div>
+                                    <Typography variant="h6">
+                                        Estrutura do Projeto
+                                    </Typography>
+
+                                    <ul>
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>Sistema desenvolvido utilizando rotas, com a biblioteca React Router Dom</span>
+                                        </li>
+
+                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                            <span>Responsividade para dispositivos mobile e desktop</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <br/>
+
+                                <div>
+                                    <Button className="repositorio-btn" size="small" href="https://github.com/andrelssn/my-portfolio" endIcon={<LaunchIcon/>}>
+                                        Repositório do Projeto
+                                    </Button>
+                                </div>
+                            </Box>
                         </div>
                     </Collapse>
                 </div>

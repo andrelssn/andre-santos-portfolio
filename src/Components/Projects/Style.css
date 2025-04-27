@@ -12,7 +12,7 @@
     color: var(--main-text);
 }
 
-.job-information-box {
+.project-information-box {
     position: relative !important;
     display: grid !important;
     flex-wrap: wrap !important;
@@ -31,19 +31,15 @@
 
 .btn-projects {
     color: #ffffff !important;
-    border: 2px solid #1B1B1E;
     background-color: #1B1B1E !important;
 }
 
 .btn-projects:hover {
-    color: #ffffff !important;
-    border: 2px solid var(--purple);
-    background-color: #1B1B1E !important;
+    color: #aaaaaa !important;
 }
 
 .btn-projects-selected {
     color: var(--purple) !important;
-    border: 2px solid #1B1B1E;
     background-color: #1B1B1E !important;
 }
 
@@ -54,4 +50,9 @@
     padding: 8px 0px !important;
     background-color: #1B1B1E !important;
     border-radius: 8px !important;
+}
+
+.repositorio-btn {
+    color: #ffffff !important;
+    background-color: var(--purple) !important;
 }

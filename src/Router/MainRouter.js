@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import Header from "../Layout/Header/Header";
@@ -10,6 +10,7 @@ import Contact from "../Views/Contact/Contact";
 import Education from "../Views/Education/Education";
 import Experience from "../Views/Experience/Experience";
 import Projects from "../Views/Projects/Projects";
+import RecognitionsView from "../Views/Recognitions/RecognitionsView";
 
 export default function MainRouter() {
     const [selectedTab, setSelectedTab] = React.useState(null);
@@ -44,12 +45,12 @@ export default function MainRouter() {
         }
 
         if(path === "/projects"){
-            setPageName("Vamos criar soluções inovadoras juntos?")
+            setPageName("Projetos já desenvolvidos até o momento.")
             setSelectedTab("projects");
         }
 
         if(path === "/recognitions"){
-            setPageName("Vamos criar soluções inovadoras juntos?")
+            setPageName("Confira os reconhecimentos que já recebi.")
             setSelectedTab("recognitions");
         }
 
@@ -75,6 +76,7 @@ export default function MainRouter() {
                 <Route path="/education" element={<Education />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/projects" element={ <Projects/> } />
+                <Route path="/recognitions" element={ <RecognitionsView/> } />
             </Routes>
         </BrowserRouter>
     );

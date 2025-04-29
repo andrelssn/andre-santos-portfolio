@@ -1,0 +1,56 @@
+.skill-container {
+    position: relative !important;
+    margin: auto !important;
+    overflow: auto !important;
+}
+
+.certificates-container {
+    width: 100% !important;
+    position: relative !important;
+    margin: auto !important;
+    overflow: auto !important;
+}
+
+.nav-box {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color: #fff !important;
+    margin: 40px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 200px !important;
+    background-color: var(--header);
+    border-radius: 36px;
+    box-shadow: 3px 3px 20px -5px #00000080 !important;
+}
+
+.icons-skills {
+    width: 100px !important;
+    margin-bottom: 20px;
+}
+
+.select-div {
+    width: auto !important;
+    max-width: 500px !important;
+    margin: 20px;
+}
+
+.img-certificates {
+    width: 100% !important;
+    max-width: 800px !important;
+}
+
+.certificates-div {
+    position: relative !important;
+    justify-self: center !important;
+    display: grid;
+    margin: 20px !important;
+    width: 90% !important;
+    max-width: 800px !important;
+    border: 2px solid #666666;
+    border-radius: 4px;
+}

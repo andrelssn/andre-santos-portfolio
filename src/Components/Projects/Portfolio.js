@@ -109,14 +109,18 @@ export default function Portfolio(){
 
                                 <div>
                                     <Typography variant="h6">
-                                        Tempo de Desenvolvimento
+                                        Objetivo e Usabilidade
                                     </Typography>
 
-                                    <ul>
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
-                                            <span>4 meses</span>
-                                        </li>
-                                    </ul>
+                                    <p style={{ marginLeft: 20, marginTop: 10 }}>
+                                        Este projeto tem como objetivo proporcionar uma plataforma digital profissional e intuitiva para apresentar habilidades, experiências e projetos desenvolvidos.
+                                        Ele foi criado para oferecer uma identidade visual única, destacando as conquistas de forma atraente e acessível
+                                    </p>
+
+                                    <p style={{ marginLeft: 20, marginTop: 10 }}>
+                                        Com um design básico e responsivo, o portfólio permite que recrutadores, clientes e colaboradores visualizem as informações de maneira clara e organizada.
+                                        Além disso, a estrutura do projeto facilita futuras atualizações e expansões, garantindo que ele permaneça relevante ao longo do tempo.
+                                    </p>
                                 </div>
 
                                 <br/>

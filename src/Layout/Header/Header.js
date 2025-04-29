@@ -1,5 +1,7 @@
 import React from "react";
-import { AppBar, Box, IconButton, Tab, Tabs, Typography } from "@mui/material";
+import { AppBar, Box, IconButton, MenuItem, Select, Tab, Tabs, TextField, Typography } from "@mui/material";
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 // Icons
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -10,15 +12,24 @@ import "./Style.css";
 
 // Prop
 import { tabSx } from "../../Components/Props/Styles";
-import { Link } from "react-router-dom";
+import { props, styleSx } from "../../Components/Skills/selectSx";
 
 export default function Header(params) {
-
     const {
         selectedTab,
         pageName,
         handleChange
     } = params;
+
+    const { i18n: {changeLanguage, language} } = useTranslation();
+    const [currentLanguage, setCurrentLanguage]   = React.useState(language)
+
+    const handleChangeLanguage = () => {
+        const newLanguage = currentLanguage === "en" ? "pt" : "en";
+
+        setCurrentLanguage(newLanguage);
+        changeLanguage(newLanguage);
+    }
 
     return (
         <AppBar className="header-bar">
@@ -26,19 +37,21 @@ export default function Header(params) {
                 {pageName}
             </Typography>
 
-            <Box sx={{ mt: 1, ml: 1, display: "flex", alignItems: "center" }}>
-                <Tabs variant="scrollable" scrollButtons allowScrollButtonsMobile value={selectedTab} onChange={handleChange} sx={tabSx}>
-                    <Tab label="Início" value={"home"} LinkComponent={Link} to={"/"}/>
-                    <Tab label="Sobre Mim" value={"about"} LinkComponent={Link} to={"/about"}/>
-                    <Tab label="Habilidades" value={"skills"} LinkComponent={Link} to={"/skills"}/>
-                    <Tab label="Educação" value={"education"} LinkComponent={Link} to={"/education"}/>
-                    <Tab label="Experiências" value={"experience"} LinkComponent={Link} to={"/experience"}/>
-                    <Tab label="Projetos" value={"projects"} LinkComponent={Link} to={"/projects"}/>
-                    <Tab label="Reconhecimentos" value={"recognitions"} LinkComponent={Link} to={"/recognitions"}/>
-                    <Tab label="Contato" value={"contact"} LinkComponent={Link} to={"/contact"}/>
-                </Tabs>
+            <Box sx={{ mt: 1, ml: 1, position: "relative", display: "flex", alignItems: "center", flexWrap: "wrap", overflow: "auto" }}>
+                <Box sx={{ display: "flex", flex: 1, minWidth: "57%", mb: 2}}>
+                    <Tabs variant="scrollable" scrollButtons allowScrollButtonsMobile value={selectedTab} onChange={handleChange} sx={tabSx}>
+                        <Tab label={<Trans>Início</Trans>} value={"home"} LinkComponent={Link} to={"/"}/>
+                        <Tab label="Sobre Mim" value={"about"} LinkComponent={Link} to={"/about"}/>
+                        <Tab label="Habilidades" value={"skills"} LinkComponent={Link} to={"/skills"}/>
+                        <Tab label="Educação" value={"education"} LinkComponent={Link} to={"/education"}/>
+                        <Tab label="Experiências" value={"experience"} LinkComponent={Link} to={"/experience"}/>
+                        <Tab label="Projetos" value={"projects"} LinkComponent={Link} to={"/projects"}/>
+                        <Tab label="Reconhecimentos" value={"recognitions"} LinkComponent={Link} to={"/recognitions"}/>
+                        <Tab label="Contato" value={"contact"} LinkComponent={Link} to={"/contact"}/>
+                    </Tabs>
+                </Box>
 
-                <Box sx={{ display: "flex", float: "right"}}>
+                <Box sx={{ display: "flex", flex: 1, minWidth: 300, mb: 2}}>
                     <IconButton href="https://www.linkedin.com/in/andresantosdev/" title="linkedin">
                         <LinkedInIcon sx={{ color: "#ffffff" }}/>
                     </IconButton>
@@ -46,6 +59,27 @@ export default function Header(params) {
                     <IconButton href="https://github.com/andrelssn" title="github">
                         <GitHubIcon sx={{ color: "#ffffff" }}/>
                     </IconButton>
+
+                    <Box sx={{ width: 200, ml: 2 }}>
+                        <TextField
+                            select
+                            fullWidth
+                            size="small"
+                            label={<Trans>Linguagem</Trans>}
+                            slotProps={props}
+                            sx={styleSx}
+                            defaultValue={currentLanguage}
+                            onChange={(e) => handleChangeLanguage(e.target.value)}
+                        >
+                            <MenuItem value="pt">
+                                Português
+                            </MenuItem>
+
+                            <MenuItem value="en">
+                                English
+                            </MenuItem>
+                        </TextField>
+                    </Box>
                 </Box>
             </Box>
         </AppBar>

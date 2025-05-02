@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Trans, useTranslation } from "react-i18next";
 
 // Components
 import Header from "../Layout/Header/Header";
@@ -13,52 +14,54 @@ import Projects from "../Views/Projects/Projects";
 import RecognitionsView from "../Views/Recognitions/RecognitionsView";
 
 export default function MainRouter() {
+    const { t } = useTranslation();
     const [selectedTab, setSelectedTab] = React.useState(null);
     const [pageName, setPageName]       = React.useState("Olá! Seja Bem-Vindo!");
+    const [update, setUpdate]           = React.useState(1);
 
     React.useEffect(() => {
         const path = window.location.pathname.substring(0);
 
         if(path === "/"){
-            setPageName("Olá! Seja Bem-Vindo!")
+            setPageName(<Trans t={t}>Olá! Seja Bem-Vindo!</Trans>)
             setSelectedTab("home");
         }
 
         if(path === "/about"){
-            setPageName("Conheça mais sobre mim!")
+            setPageName(<Trans t={t}>Conheça mais sobre mim!</Trans>)
             setSelectedTab("about");
         }
 
         if(path === "/skills"){
-            setPageName("Conheça minhas qualificações.")
+            setPageName(<Trans t={t}>Conheça minhas qualificações!</Trans>)
             setSelectedTab("skills");
         }
 
         if(path === "/education"){
-            setPageName("Uma visão geral de minha trilha acadêmica.")
+            setPageName(<Trans t={t}>Uma visão geral de minha trilha acadêmica.</Trans>)
             setSelectedTab("education");
         }
 
         if(path === "/experience"){
-            setPageName("Saiba mais sobre minhas experiências.")
+            setPageName(<Trans t={t}>Saiba mais sobre minhas experiências!</Trans>)
             setSelectedTab("experience");
         }
 
         if(path === "/projects"){
-            setPageName("Projetos já desenvolvidos até o momento.")
+            setPageName(<Trans t={t}>Projetos já desenvolvidos até o momento.</Trans>)
             setSelectedTab("projects");
         }
 
         if(path === "/recognitions"){
-            setPageName("Confira os reconhecimentos que já recebi.")
+            setPageName(<Trans t={t}>Confira os reconhecimentos que já recebi!</Trans>)
             setSelectedTab("recognitions");
         }
 
         if(path === "/contact"){
-            setPageName("Vamos criar soluções inovadoras juntos?")
+            setPageName(<Trans t={t}>Vamos criar soluções inovadoras juntos?</Trans>)
             setSelectedTab("contact");
         }
-    }, [selectedTab]);
+    }, [selectedTab, update]);
 
     const handleChange = (event, newValue) => {
         setSelectedTab(newValue);
@@ -66,17 +69,17 @@ export default function MainRouter() {
 
     return (
         <BrowserRouter>
-            <Header selectedTab={selectedTab} pageName={pageName} handleChange={handleChange}/>
+            <Header selectedTab={selectedTab} pageName={pageName} handleChange={handleChange} update={update} setUpdate={setUpdate}/>
 
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/skills" element={<Skills handleChange={handleChange}/>} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/education" element={<Education />} />
+                <Route path="/" element={<Home t={t}/>} />
+                <Route path="/about" element={<About t={t}/>} />
+                <Route path="/skills" element={<Skills handleChange={handleChange} t={t}/>} />
+                <Route path="/education" element={<Education t={t}/>} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/projects" element={ <Projects/> } />
                 <Route path="/recognitions" element={ <RecognitionsView/> } />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>
     );

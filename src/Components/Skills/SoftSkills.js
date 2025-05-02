@@ -11,8 +11,9 @@ import comunicacao from "../../images/icons/soft/comunicacao.png";
 import critico from "../../images/icons/soft/critico.png";
 import problemsolution from "../../images/icons/soft/problemsolution.png";
 import teamwork from "../../images/icons/soft/trabalhoequipe.png";
+import { Trans } from "react-i18next";
 
-export default function SoftSkills() {
+export default function SoftSkills({ t }) {
 
     if(!emotional) return <CircularProgress sx={{ margin: "auto" }}/>;
 
@@ -22,37 +23,37 @@ export default function SoftSkills() {
                 <div style={{ display: "flex", flexWrap: "wrap" }}>
                     <div className="nav-box">
                         <img src={emotional} alt="emotional inteligence" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Inteligência Emocional</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Inteligência Emocional</Trans></Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={adaptacao} alt="adaptation" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Rápida Adaptação</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Rápida Adaptação</Trans></Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={aprendizado} alt="apprenticeship" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Rápido Aprendizado</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Rápido Aprendizado</Trans></Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={comunicacao} alt="comunication" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Boa Comunicação</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Boa Comunicação</Trans></Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={critico} alt="critico" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Pensamento Crítico</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Pensamento Crítico</Trans></Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={problemsolution} alt="problemsolution" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Solução de Problemas</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Solução de Problemas</Trans></Typography>
                     </div>
 
                     <div className="nav-box">
                         <img src={teamwork} alt="teamwork" className="icons-skills"/>
-                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}>Trabalho em Equipe</Typography>
+                        <Typography textAlign={"center"} fontWeight={"bold"} ml={2}><Trans t={t}>Trabalho em Equipe</Trans></Typography>
                     </div>
                 </div>
             </div>

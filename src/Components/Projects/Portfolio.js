@@ -1,5 +1,6 @@
 import React from "react";
 import { Fade, Typography, Button, Collapse, Box, colors } from "@mui/material";
+import { Trans } from "react-i18next";
 
 // Style
 import "./Style.css";
@@ -35,7 +36,7 @@ export default function Portfolio(){
                         </Typography>
                     </div>
 
-                    <span style={{ color: "#cecece" }}>versão 1.0.0</span>
+                    <span style={{ color: "#cecece" }}><Trans>versão</Trans> 1.0.0</span>
 
                     <div style={{ margin: "10px 0px" }}>
                         <Button className={openLog ? "btn-projects-selected" : "btn-projects"} onClick={() => handleOpenClose("log")}>
@@ -43,7 +44,7 @@ export default function Portfolio(){
                         </Button>
 
                         <Button className={openAbout ? "btn-projects-selected" : "btn-projects"} onClick={() => handleOpenClose("about")} sx={{ ml: 1 }}>
-                            Sobre
+                            <Trans>Sobre</Trans>
                         </Button>
                     </div>
                 </div>
@@ -55,7 +56,7 @@ export default function Portfolio(){
                             <Box sx={{ borderLeft: "1px solid var(--purple)", p: 2, m: "5px 20px" }}>
                                 <ul>
                                     <li style={{ color: "var(--purple)" }}>
-                                        <span style={{ color: "var(--secondary)" }}>1.0.0 - Primeira versão do sistema</span>
+                                        <span style={{ color: "var(--secondary)" }}>1.0.0 - <Trans>Primeira versão do sistema</Trans></span>
                                     </li>
                                 </ul>
                             </Box>
@@ -67,7 +68,7 @@ export default function Portfolio(){
                             <Box sx={{ p: 2, m: "5px 20px" }}>
                                 <div>
                                     <Typography variant="h6">
-                                        Tecnologias Utilizadas
+                                        <Trans>Tecnologias Utilizadas</Trans>
                                     </Typography>
 
                                     <ul>
@@ -109,17 +110,21 @@ export default function Portfolio(){
 
                                 <div>
                                     <Typography variant="h6">
-                                        Objetivo e Usabilidade
+                                        <Trans>Objetivo e Usabilidade</Trans>
                                     </Typography>
 
                                     <p style={{ marginLeft: 20, marginTop: 10 }}>
-                                        Este projeto tem como objetivo proporcionar uma plataforma digital profissional e intuitiva para apresentar habilidades, experiências e projetos desenvolvidos.
-                                        Ele foi criado para oferecer uma identidade visual única, destacando as conquistas de forma atraente e acessível
+                                        <Trans>
+                                            Este projeto tem como objetivo proporcionar uma plataforma digital profissional e intuitiva para apresentar habilidades, experiências e projetos desenvolvidos.
+                                            Ele foi criado para oferecer uma identidade visual única, destacando as conquistas de forma atraente e acessível
+                                        </Trans>
                                     </p>
 
                                     <p style={{ marginLeft: 20, marginTop: 10 }}>
-                                        Com um design básico e responsivo, o portfólio permite que recrutadores, clientes e colaboradores visualizem as informações de maneira clara e organizada.
-                                        Além disso, a estrutura do projeto facilita futuras atualizações e expansões, garantindo que ele permaneça relevante ao longo do tempo.
+                                        <Trans>
+                                            Com um design básico e responsivo, o portfólio permite que recrutadores, clientes e colaboradores visualizem as informações de maneira clara e organizada.
+                                            Além disso, a estrutura do projeto facilita futuras atualizações e expansões, garantindo que ele permaneça relevante ao longo do tempo.
+                                        </Trans>
                                     </p>
                                 </div>
 
@@ -127,16 +132,20 @@ export default function Portfolio(){
 
                                 <div>
                                     <Typography variant="h6">
-                                        Estrutura do Projeto
+                                        <Trans>Estrutura do Projeto</Trans>
                                     </Typography>
 
                                     <ul>
                                         <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
-                                            <span>Sistema desenvolvido utilizando rotas, com a biblioteca React Router Dom</span>
+                                            <span>
+                                                <Trans>Sistema desenvolvido utilizando rotas, com a biblioteca React Router Dom</Trans>
+                                            </span>
                                         </li>
 
                                         <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
-                                            <span>Responsividade para dispositivos mobile e desktop</span>
+                                            <span>
+                                                <Trans>Responsividade para dispositivos mobile e desktop</Trans>
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>

@@ -1,7 +1,11 @@
 import React from "react";
 import { Fade, Typography, Divider, Box, Tabs, Tab } from "@mui/material";
+import { Trans } from "react-i18next";
 
+// Styles
 import "./Style.css";
+
+// Components
 import Certificates from "../../Components/Certificates/Certificates";
 
 const tabSx = {
@@ -24,7 +28,7 @@ const tabSx = {
 };
 
 
-export default function Education() {
+export default function Education({ t }) {
     const [value, setValue] = React.useState(0);
 
     const handleChangeTab = (event, newValue) => {
@@ -45,8 +49,8 @@ export default function Education() {
                         allowScrollButtonsMobile
                         TabScrollButtonProps={{ style: { color: "var(--purple)" } }}
                     >
-                        <Tab label="Escolaridade" className="tab-button"/>
-                        <Tab label="Certificações" className="tab-button"/>
+                        <Tab label={<Trans>Escolaridade</Trans>} className="tab-button"/>
+                        <Tab label={<Trans>Certificações</Trans>} className="tab-button"/>
                     </Tabs>
                 </Box>
 
@@ -56,20 +60,20 @@ export default function Education() {
                             <nav className="bottom-side-education">
                                 <section className="education-section">
                                     <Typography fontSize={26} color="var(--main-text)">
-                                        Ensino Superior
+                                        <Trans>Ensino Superior</Trans>
                                     </Typography>
 
                                     <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
 
                                     <span style={{ fontWeight: "bold" }}>Centro Universitário UniMetrocamp - Wyden</span><br/>
-                                    <span>Bacharelado em Ciências da Computação</span><br/>
+                                    <span><Trans>Bacharelado em Ciências da Computação</Trans></span><br/>
                                     <span>Campinas, São Paulo</span><br/>
                                     <span>2021 - 2025</span>
                                 </section>
 
                                 <section className="education-section">
                                     <Typography fontSize={26} color="var(--main-text)">
-                                        Ensino Médio & Fundamental
+                                        <Trans>Ensino Médio & Fundamental</Trans>
                                     </Typography>
 
                                     <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>

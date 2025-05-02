@@ -7,6 +7,7 @@ import srbr from "../../images/certificate.jpg";
 // Styles
 import "./Style.css";
 import { props, styleSx } from "../Skills/selectSx";
+import { Trans } from "react-i18next";
 
 const certificates = [
     "Samsung R&D Brazil",
@@ -24,7 +25,7 @@ export default function RecognitionsList() {
                     <TextField
                         select
                         size="small"
-                        label="Selecionar"
+                        label={<Trans>Selecionar</Trans>}
                         slotProps={props}
                         sx={styleSx}
                         fullWidth
@@ -40,7 +41,7 @@ export default function RecognitionsList() {
 
                 <div className="certificates-div">
                     <Typography p={2} bgcolor={"var(--purple)"} color="#ffffff" fontWeight={"bold"}>
-                        {!option ? "Select an option" : "Certificate of Recognition"}
+                        {!option ? <Trans>Select an option</Trans> : <Trans>Certificado de Reconhecimento</Trans>}
                     </Typography>
 
                     { option === "Samsung R&D Brazil" ? ( <Fade in={true}><img src={srbr} alt="srbr" className="img-certificates"/></Fade> ) : (<></>) }

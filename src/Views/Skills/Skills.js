@@ -8,6 +8,7 @@ import "./Style.css";
 import Tech from "../../Components/Skills/Tech";
 import SkillLanguage from "../../Components/Skills/SkillLanguage";
 import SoftSkills from "../../Components/Skills/SoftSkills";
+import { Trans } from "react-i18next";
 
 const tabSx = {
     "& .MuiTabs-indicator": {
@@ -28,7 +29,7 @@ const tabSx = {
     },
 };
 
-export default function Skills({handleChange}) {
+export default function Skills({ handleChange, t }) {
     const [value, setValue] = React.useState(0);
 
     const handleChangeTab = (event, newValue) => {
@@ -53,16 +54,16 @@ export default function Skills({handleChange}) {
                         allowScrollButtonsMobile
                         TabScrollButtonProps={{ style: { color: "var(--purple)" } }}
                     >
-                        <Tab label="Linguagens de Programação" className="tab-button"/>
-                        <Tab label="Tecnologias e Ferramentas" className="tab-button"/>
+                        <Tab label={<Trans>Linguagens de Programação</Trans>} className="tab-button"/>
+                        <Tab label={<Trans>Tecnologias e Ferramentas</Trans>} className="tab-button"/>
                         <Tab label="Soft Skills" className="tab-button"/>
                     </Tabs>
                 </Box>
 
                 <Box className="bottom-side-skills">
-                    { value === 0 ? ( <SkillLanguage/> ) : <></> }
+                    { value === 0 ? ( <SkillLanguage /> ) : <></> }
                     { value === 1 ? ( <Tech/> ) : <></> }
-                    { value === 2 ? ( <SoftSkills /> ) : <></> }
+                    { value === 2 ? ( <SoftSkills t={t}/> ) : <></> }
                 </Box>
             </div>
         </Fade>

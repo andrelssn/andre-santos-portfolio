@@ -154,7 +154,7 @@ export default function Portfolio(){
 
                                 <div>
                                     <Button className="repositorio-btn" size="small" href="https://github.com/andrelssn/my-portfolio" endIcon={<LaunchIcon/>}>
-                                        Repositório do Projeto
+                                        <Trans>Repositório do Projeto</Trans>
                                     </Button>
                                 </div>
                             </Box>

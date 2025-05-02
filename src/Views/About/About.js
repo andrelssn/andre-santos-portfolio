@@ -1,3 +1,4 @@
+import { Trans } from "react-i18next";
 import { Box, Fade, Typography } from "@mui/material";
 
 // Style
@@ -6,7 +7,7 @@ import "./Style.css";
 // IMG
 import image from "../../images/andreimage.jpg";
 
-export default function About() {
+export default function About({ t }) {
 
     if(!image) return null;
 
@@ -20,37 +21,45 @@ export default function About() {
 
                     <Typography color="var(--main-text)" textAlign={"center"} fontWeight={"bold"}>
                         André Santos <br/>
-                        23 anos <br/>
-                        Desenvolvedor de Software <br/>
-                        Ciência da Computação
+                        23 <Trans t={t}>anos</Trans> <br/>
+                        <Trans t={t}>Desenvolvedor de Software</Trans> <br/>
+                        <Trans t={t}>Cientista da Computação</Trans>
                     </Typography>
                 </Box>
 
                 <Box className="right-side-about">
                     <section className="section-about">
                         <Typography m={"40px 0px"} variant="h4" textAlign={"center"} color="#fff">
-                            Me conheça!
+                            <Trans t={t}>Me conheça!</Trans>
                         </Typography>
 
                         <p>
-                            Desde criança, sempre fui fascinado por programação.
-                            Jogava video-games e me perguntava como os programas eram criados.
+                            <Trans t={t}>
+                                Desde criança, sempre fui fascinado por programação.
+                                Jogava video-games e me perguntava como os programas eram criados.
+                            </Trans>
                         </p>
 
                         <p>
-                            Com o tempo, essa curiosidade cresceu.
-                            Comecei com C/C++, assustador no início, mas tudo fez sentido ao entender lógica e algoritmos.
+                            <Trans t={t}>
+                                Com o tempo, essa curiosidade cresceu.
+                                Comecei com C/C++, assustador no início, mas tudo fez sentido ao entender lógica e algoritmos.
+                            </Trans>
                         </p>
 
                         <p>
-                            Logo, me interessei por desenvolvimento web e me apaixonei por React JS.
-                            Meu estágio na Samsung R&D foi essencial para minha jornada como full-stack,
-                            trabalhando tanto no Front-End quanto no Back-End.
+                            <Trans t={t}>
+                                Logo, me interessei por desenvolvimento web e me apaixonei por React JS.
+                                Meu estágio na Samsung R&D foi essencial para minha jornada como full-stack,
+                                trabalhando tanto no Front-End quanto no Back-End.
+                            </Trans>
                         </p>
 
                         <p>
-                            Hoje, continuo aprimorando minhas habilidades e explorando novas linguagens,
-                            sempre buscando entregar os melhores resultados aos clientes!
+                            <Trans t={t}>
+                                Hoje, continuo aprimorando minhas habilidades e explorando novas linguagens,
+                                sempre buscando entregar os melhores resultados aos clientes!
+                            </Trans>
                         </p>
                     </section>
                 </Box>

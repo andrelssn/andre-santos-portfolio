@@ -41,13 +41,13 @@ export default function Header(params) {
                 <Box sx={{ display: "flex", flex: 1, minWidth: "57%", mb: 2}}>
                     <Tabs variant="scrollable" scrollButtons allowScrollButtonsMobile value={selectedTab} onChange={handleChange} sx={tabSx}>
                         <Tab label={<Trans>Início</Trans>} value={"home"} LinkComponent={Link} to={"/"}/>
-                        <Tab label="Sobre Mim" value={"about"} LinkComponent={Link} to={"/about"}/>
-                        <Tab label="Habilidades" value={"skills"} LinkComponent={Link} to={"/skills"}/>
-                        <Tab label="Educação" value={"education"} LinkComponent={Link} to={"/education"}/>
-                        <Tab label="Experiências" value={"experience"} LinkComponent={Link} to={"/experience"}/>
-                        <Tab label="Projetos" value={"projects"} LinkComponent={Link} to={"/projects"}/>
-                        <Tab label="Reconhecimentos" value={"recognitions"} LinkComponent={Link} to={"/recognitions"}/>
-                        <Tab label="Contato" value={"contact"} LinkComponent={Link} to={"/contact"}/>
+                        <Tab label={<Trans>Sobre Mim</Trans>} value={"about"} LinkComponent={Link} to={"/about"}/>
+                        <Tab label={<Trans>Habilidades</Trans>} value={"skills"} LinkComponent={Link} to={"/skills"}/>
+                        <Tab label={<Trans>Educação</Trans>} value={"education"} LinkComponent={Link} to={"/education"}/>
+                        <Tab label={<Trans>Experiências</Trans>} value={"experience"} LinkComponent={Link} to={"/experience"}/>
+                        <Tab label={<Trans>Projetos</Trans>} value={"projects"} LinkComponent={Link} to={"/projects"}/>
+                        <Tab label={<Trans>Reconhecimentos</Trans>} value={"recognitions"} LinkComponent={Link} to={"/recognitions"}/>
+                        <Tab label={<Trans>Contato</Trans>} value={"contact"} LinkComponent={Link} to={"/contact"}/>
                     </Tabs>
                 </Box>
 

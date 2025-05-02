@@ -1,5 +1,6 @@
 import React from "react";
 import {CircularProgress, Fade, MenuItem, TextField, Typography } from "@mui/material";
+import { Trans } from "react-i18next";
 
 // img
 import api from "../../images/certificates/apis.jpg";
@@ -36,7 +37,7 @@ export default function Certificates() {
                     <TextField
                         select
                         size="small"
-                        label="Selecionar"
+                        label={<Trans>Selecionar</Trans>}
                         slotProps={props}
                         sx={styleSx}
                         fullWidth
@@ -52,7 +53,7 @@ export default function Certificates() {
 
                 <div className="certificates-div">
                     <Typography p={2} bgcolor={"var(--purple)"} color="#ffffff" fontWeight={"bold"}>
-                        {!option ? "Select an option" : "Certificate"}
+                        {!option ? <Trans>Selecione uma opção</Trans> : <Trans>Certificado</Trans>}
                     </Typography>
 
                     { option === "APIs Nodejs, Express + MongoDB, SQL" ? ( <Fade in={true}><img src={api} alt="api" className="img-certificates"/></Fade> ) : (<></>) }

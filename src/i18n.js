@@ -78,7 +78,8 @@ const resources = {
             "Certificado de Reconhecimento": "Recognition Certificate",
             "Email para contato": "Contact Email",
             "Enviar e-mail": "Send Email",
-            "Redes Sociais": "Social Media"
+            "Redes Sociais": "Social Media",
+            "Repositório do Projeto": "Project Repository"
         }
     }
 };

@@ -3,6 +3,10 @@ import { AppBar, Box, IconButton, MenuItem, Select, Tab, Tabs, TextField, Typogr
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
+// IMG
+import pt from "../../images/flags/brasil.png";
+import en from "../../images/flags/eua.png";
+
 // Icons
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -18,17 +22,21 @@ export default function Header(params) {
     const {
         selectedTab,
         pageName,
-        handleChange
+        handleChange,
+        update,
+        setUpdate
     } = params;
 
     const { i18n: {changeLanguage, language} } = useTranslation();
-    const [currentLanguage, setCurrentLanguage]   = React.useState(language)
+    const [currentLanguage, setCurrentLanguage] = React.useState(language);
 
     const handleChangeLanguage = () => {
         const newLanguage = currentLanguage === "en" ? "pt" : "en";
 
+        localStorage.setItem("language", newLanguage);
         setCurrentLanguage(newLanguage);
         changeLanguage(newLanguage);
+        setUpdate(update + 1);
     }
 
     return (
@@ -60,7 +68,7 @@ export default function Header(params) {
                         <GitHubIcon sx={{ color: "#ffffff" }}/>
                     </IconButton>
 
-                    <Box sx={{ width: 200, ml: 2 }}>
+                    <Box sx={{ width: 160, ml: 2 }}>
                         <TextField
                             select
                             fullWidth
@@ -71,12 +79,18 @@ export default function Header(params) {
                             defaultValue={currentLanguage}
                             onChange={(e) => handleChangeLanguage(e.target.value)}
                         >
-                            <MenuItem value="pt">
-                                Português
+                            <MenuItem value="pt" >
+                                <span style={{ display: "flex" }}>
+                                    <img src={pt} style={{ width: 20, height: 20, marginRight: 5 }}/>
+                                    Português
+                                </span>
                             </MenuItem>
 
                             <MenuItem value="en">
-                                English
+                                <span style={{ display: "flex" }}>
+                                    <img src={en} style={{ width: 20, height: 20, marginRight: 5 }}/>
+                                    English
+                                </span>
                             </MenuItem>
                         </TextField>
                     </Box>

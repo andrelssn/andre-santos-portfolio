@@ -1,0 +1,44 @@
+.contact-container {
+    justify-self: center !important;
+    width: 95% !important;
+    margin-top: 30px !important;
+    border: 3px solid var(--header) !important;
+    border-radius: 6px !important;
+    background-color: rgba(36, 35, 35, 0.397) !important;
+    overflow: auto !important;
+    border-radius: 36px !important;
+}
+
+.contact-section {
+    font-size: 21px;
+    color: var(--main-text);
+    margin: auto;
+    padding: 20px 30px;
+    margin: 30px !important;
+    background-color: var(--header) !important;
+    border-radius: 15px;
+    overflow: auto !important;
+}
+
+.contact-section span {
+    font-size: 21px;
+    color: var(--purple);
+    font-weight: bold !important;
+}
+
+.email-anchor {
+    font-size: 18px !important;
+    color: var(--main-text);
+    padding: 10px 25px;
+    text-decoration: none !important;
+    border-radius: 20px !important;
+    background-color: var(--page);
+    border: 2px solid var(--page) !important;
+    overflow: auto !important;
+}
+
+.email-anchor:hover {
+    color: var(--purple) !important;
+    background-color: #242424 !important;
+    border: 2px solid var(--purple) !important;
+}

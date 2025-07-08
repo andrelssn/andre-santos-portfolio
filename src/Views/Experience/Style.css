@@ -19,7 +19,7 @@
 }
 
 .experience-section span {
-    color: var(--main-text);
+    color: var(--text);
 }
 
 .job-information-box {
@@ -31,7 +31,7 @@
 }
 
 .ul-list {
-    color: var(--main-text) !important;
+    color: var(--text) !important;
 }
 
 .info-section-job {

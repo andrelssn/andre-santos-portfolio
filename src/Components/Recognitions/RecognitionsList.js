@@ -40,7 +40,7 @@ export default function RecognitionsList() {
                 </div>
 
                 <div className="certificates-div">
-                    <Typography p={2} bgcolor={"var(--purple)"} color="#ffffff" fontWeight={"bold"}>
+                    <Typography p={2} bgcolor={"var(--secondary)"} color="#ffffff" fontWeight={"bold"}>
                         {!option ? <Trans>Select an option</Trans> : <Trans>Certificado de Reconhecimento</Trans>}
                     </Typography>
 

@@ -9,7 +9,7 @@
 }
 
 .projects-section span {
-    color: var(--main-text);
+    color: var(--text);
 }
 
 .project-information-box {
@@ -21,7 +21,7 @@
 }
 
 .ul-list {
-    color: var(--main-text) !important;
+    color: var(--text) !important;
 }
 
 .info-section-job {
@@ -39,7 +39,7 @@
 }
 
 .btn-projects-selected {
-    color: var(--purple) !important;
+    color: var(--secondary) !important;
     background-color: #1B1B1E !important;
 }
 
@@ -54,5 +54,5 @@
 
 .repositorio-btn {
     color: #ffffff !important;
-    background-color: var(--purple) !important;
+    background-color: var(--secondary) !important;
 }

@@ -37,5 +37,5 @@
 .section-home p {
     font-size: 18px;
     font-weight: 500 !important;
-    color: var(--main-text) !important;
+    color: var(--text) !important;
 }

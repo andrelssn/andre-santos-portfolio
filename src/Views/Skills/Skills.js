@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Fade, Tab, Tabs } from "@mui/material";
+import { Trans } from "react-i18next";
 
 // Style
 import "./Style.css";
@@ -8,37 +9,36 @@ import "./Style.css";
 import Tech from "../../Components/Skills/Tech";
 import SkillLanguage from "../../Components/Skills/SkillLanguage";
 import SoftSkills from "../../Components/Skills/SoftSkills";
-import { Trans } from "react-i18next";
 
 const tabSx = {
     "& .MuiTabs-indicator": {
-        backgroundColor: "var(--purple)",
+        backgroundColor: "var(--secondary)",
     },
     "& .MuiButtonBase-root.MuiTab-root": {
         color: "#cecece",
         fontWeight: "bold",
         transition: "color 0.2s ease-in-out",
         "&:hover": {
-            color: "var(--purple)",
+            color: "var(--secondary)",
         },
         "&.Mui-selected": {
-            color: "var(--purple)",
+            color: "var(--secondary)",
             fontWeight: "bold",
             backgroundColor: "var(--test)"
         },
     },
 };
 
-export default function Skills({ handleChange, t }) {
+export default function Skills({ t, updateKeyHeader }) {
     const [value, setValue] = React.useState(0);
+
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
 
     const handleChangeTab = (event, newValue) => {
       setValue(newValue);
     };
-
-    React.useEffect(() => {
-        handleChange('', "skills");
-    }, []);
 
     return (
         <Fade in={true}>
@@ -52,7 +52,7 @@ export default function Skills({ handleChange, t }) {
                         variant="scrollable"
                         scrollButtons
                         allowScrollButtonsMobile
-                        TabScrollButtonProps={{ style: { color: "var(--purple)" } }}
+                        TabScrollButtonProps={{ style: { color: "var(--secondary)" } }}
                     >
                         <Tab label={<Trans>Linguagens de Programação</Trans>} className="tab-button"/>
                         <Tab label={<Trans>Tecnologias e Ferramentas</Trans>} className="tab-button"/>

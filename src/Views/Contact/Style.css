@@ -11,7 +11,7 @@
 
 .contact-section {
     font-size: 21px;
-    color: var(--main-text);
+    color: var(--text);
     margin: auto;
     padding: 20px 30px;
     margin: 30px !important;
@@ -22,13 +22,13 @@
 
 .contact-section span {
     font-size: 21px;
-    color: var(--purple);
+    color: var(--secondary);
     font-weight: bold !important;
 }
 
 .email-anchor {
     font-size: 18px !important;
-    color: var(--main-text);
+    color: var(--text);
     padding: 10px 25px;
     text-decoration: none !important;
     border-radius: 20px !important;
@@ -38,7 +38,7 @@
 }
 
 .email-anchor:hover {
-    color: var(--purple) !important;
+    color: var(--secondary) !important;
     background-color: #242424 !important;
-    border: 2px solid var(--purple) !important;
+    border: 2px solid var(--secondary) !important;
 }

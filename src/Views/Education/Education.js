@@ -10,17 +10,17 @@ import Certificates from "../../Components/Certificates/Certificates";
 
 const tabSx = {
     "& .MuiTabs-indicator": {
-        backgroundColor: "var(--purple)",
+        backgroundColor: "var(--secondary)",
     },
     "& .MuiButtonBase-root.MuiTab-root": {
         color: "#cecece",
         fontWeight: "bold",
         transition: "color 0.2s ease-in-out",
         "&:hover": {
-            color: "var(--purple)",
+            color: "var(--secondary)",
         },
         "&.Mui-selected": {
-            color: "var(--purple)",
+            color: "var(--secondary)",
             fontWeight: "bold",
             backgroundColor: "var(--test)"
         },
@@ -28,8 +28,12 @@ const tabSx = {
 };
 
 
-export default function Education({ t }) {
+export default function Education({ updateKeyHeader }) {
     const [value, setValue] = React.useState(0);
+
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
 
     const handleChangeTab = (event, newValue) => {
       setValue(newValue);
@@ -47,7 +51,7 @@ export default function Education({ t }) {
                         variant="scrollable"
                         scrollButtons
                         allowScrollButtonsMobile
-                        TabScrollButtonProps={{ style: { color: "var(--purple)" } }}
+                        TabScrollButtonProps={{ style: { color: "var(--secondary)" } }}
                     >
                         <Tab label={<Trans>Escolaridade</Trans>} className="tab-button"/>
                         <Tab label={<Trans>Certificações</Trans>} className="tab-button"/>
@@ -59,11 +63,11 @@ export default function Education({ t }) {
                         ? <Fade in={true}>
                             <nav className="bottom-side-education">
                                 <section className="education-section">
-                                    <Typography fontSize={26} color="var(--main-text)">
+                                    <Typography fontSize={26} color="var(--text)">
                                         <Trans>Ensino Superior</Trans>
                                     </Typography>
 
-                                    <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
+                                    <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
 
                                     <span style={{ fontWeight: "bold" }}>Centro Universitário UniMetrocamp - Wyden</span><br/>
                                     <span><Trans>Bacharelado em Ciências da Computação</Trans></span><br/>
@@ -72,11 +76,11 @@ export default function Education({ t }) {
                                 </section>
 
                                 <section className="education-section">
-                                    <Typography fontSize={26} color="var(--main-text)">
+                                    <Typography fontSize={26} color="var(--text)">
                                         <Trans>Ensino Médio & Fundamental</Trans>
                                     </Typography>
 
-                                    <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
+                                    <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
 
                                     <span style={{ fontWeight: "bold" }}>Escola Estadual Monsenhor Luis Gonzaga de Moura</span><br/>
                                     <span>Campinas, São Paulo</span><br/>

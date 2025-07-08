@@ -1,3 +1,4 @@
+import React from "react";
 import { Fade, IconButton, Typography } from "@mui/material";
 
 // Icons
@@ -8,7 +9,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import "./Style.css";
 import { Trans } from "react-i18next";
 
-export default function Contact() {
+export default function Contact({ updateKeyHeader }) {
+
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
+
     return (
         <Fade in={true}>
             <nav className="contact-container">
@@ -21,7 +27,7 @@ export default function Contact() {
                 </section>
 
                 <section className="contact-section">
-                    <Typography color="var(--purple)" fontWeight={"bold"} variant="h5">
+                    <Typography color="var(--secondary)" fontWeight={"bold"} variant="h5">
                         <Trans>Redes Sociais</Trans>
                     </Typography>
 

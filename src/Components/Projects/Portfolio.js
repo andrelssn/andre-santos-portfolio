@@ -31,7 +31,7 @@ export default function Portfolio(){
                 <div style={{ flexWrap: "wrap" }}>
                     <div style={{ display: "flex", alignItems: "center", position: "relative", minWidth: 250, flex: 1 }}>
                         <img src={webicon} style={{ width: 30, marginRight: 5 }}/>
-                        <Typography fontSize={26} color="var(--main-text)">
+                        <Typography fontSize={26} color="var(--text)">
                             Portfolio André Santos
                         </Typography>
                     </div>
@@ -53,9 +53,9 @@ export default function Portfolio(){
                 <div className="project-information-box">
                     <Collapse in={openLog}>
                         <div className="collapse-container">
-                            <Box sx={{ borderLeft: "1px solid var(--purple)", p: 2, m: "5px 20px" }}>
+                            <Box sx={{ borderLeft: "1px solid var(--secondary)", p: 2, m: "5px 20px" }}>
                                 <ul>
-                                    <li style={{ color: "var(--purple)" }}>
+                                    <li style={{ color: "var(--secondary)" }}>
                                         <span style={{ color: "var(--secondary)" }}>1.0.0 - <Trans>Primeira versão do sistema</Trans></span>
                                     </li>
                                 </ul>
@@ -72,35 +72,35 @@ export default function Portfolio(){
                                     </Typography>
 
                                     <ul>
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>JavaScript</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>React JS</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>Material UI v6</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>React Router Dom</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>i18n (Translate)</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>HTML & CSS</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>Visual Studio Code</span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>Git</span>
                                         </li>
                                     </ul>
@@ -136,13 +136,13 @@ export default function Portfolio(){
                                     </Typography>
 
                                     <ul>
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>
                                                 <Trans>Sistema desenvolvido utilizando rotas, com a biblioteca React Router Dom</Trans>
                                             </span>
                                         </li>
 
-                                        <li style={{ color: "var(--purple)", ".span": { color: "var(--secondary)" } }}>
+                                        <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
                                             <span>
                                                 <Trans>Responsividade para dispositivos mobile e desktop</Trans>
                                             </span>

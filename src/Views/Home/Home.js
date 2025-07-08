@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Fade, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Trans } from "react-i18next";
@@ -8,7 +9,12 @@ import "./Style.css";
 // IMG
 import image from "../../images/andre.jpeg";
 
-export default function Home({ t }) {
+export default function Home({ t, updateKeyHeader }) {
+
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
+
     return (
         <Fade in={true}>
             <div className="home-container">
@@ -17,7 +23,7 @@ export default function Home({ t }) {
                         <img src={image} className="img-style"/>
                     </div>
 
-                    <Typography color="var(--main-text)" textAlign={"center"} fontWeight={"bold"}>
+                    <Typography color="var(--text)" textAlign={"center"} fontWeight={"bold"}>
                         André Santos <br/>
                         23 <Trans t={t}>anos</Trans> <br/>
                         <Trans t={t}>Desenvolvedor de Software</Trans> <br/>

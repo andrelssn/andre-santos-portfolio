@@ -68,19 +68,21 @@ export default function MainRouter() {
     };
 
     return (
-        <BrowserRouter>
-            <Header selectedTab={selectedTab} pageName={pageName} handleChange={handleChange} update={update} setUpdate={setUpdate}/>
+        <div class="container">
+            <BrowserRouter>
+                <Header selectedTab={selectedTab} pageName={pageName} handleChange={handleChange} update={update} setUpdate={setUpdate}/>
 
-            <Routes>
-                <Route path="/" element={<Home t={t}/>} />
-                <Route path="/about" element={<About t={t}/>} />
-                <Route path="/skills" element={<Skills handleChange={handleChange} t={t}/>} />
-                <Route path="/education" element={<Education t={t}/>} />
-                <Route path="/experience" element={<Experience />} />
-                <Route path="/projects" element={ <Projects/> } />
-                <Route path="/recognitions" element={ <RecognitionsView/> } />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
-        </BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home t={t}/>} />
+                    <Route path="/about" element={<About t={t}/>} />
+                    <Route path="/skills" element={<Skills handleChange={handleChange} t={t}/>} />
+                    <Route path="/education" element={<Education t={t}/>} />
+                    <Route path="/experience" element={<Experience />} />
+                    <Route path="/projects" element={ <Projects/> } />
+                    <Route path="/recognitions" element={ <RecognitionsView/> } />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }

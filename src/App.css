@@ -1,4 +1,11 @@
+@font-face {
+  	font-family: 'Roboto-Regular';
+  	src: local('Roboto-Regular'), url('fonts/Roboto-Regular.ttf') format('truetype');
+}
 
+* {
+	font-family: 'Roboto-Regular', sans-serif !important;
+}
 
 body {
   height: 100vh !important;

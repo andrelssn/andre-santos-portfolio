@@ -61,7 +61,7 @@ export default function MainRouter() {
             setPageName(<Trans t={t}>Vamos criar soluções inovadoras juntos?</Trans>)
             setSelectedTab("contact");
         }
-    }, [selectedTab, update]);
+    }, [selectedTab, update, t]);
 
     const handleChange = (event, newValue) => {
         setSelectedTab(newValue);

@@ -35,7 +35,7 @@ export default function MainRouter({ theme, toggleTheme, isMobile }) {
                 <Route path="/about" element={<About t={t} updateKeyHeader={updateKeyHeader}/>} />
                 <Route path="/skills" element={<Skills t={t} updateKeyHeader={updateKeyHeader}/>} />
                 <Route path="/education" element={<Education t={t} updateKeyHeader={updateKeyHeader}/>} />
-                <Route path="/experience" element={<Experience updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/experiences" element={<Experience updateKeyHeader={updateKeyHeader}/>} />
                 <Route path="/projects" element={ <Projects updateKeyHeader={updateKeyHeader}/> } />
                 <Route path="/recognitions" element={ <RecognitionsView updateKeyHeader={updateKeyHeader}/> } />
                 <Route path="/contact" element={<Contact updateKeyHeader={updateKeyHeader}/>} />

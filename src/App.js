@@ -24,13 +24,11 @@ function App() {
 
   	return (
     	<body id="body">
-			<div class="container">
-				<MainRouter
-					theme={theme}
-					toggleTheme={toggleTheme}
-					isMobile={isMobile}
-				/>
-			</div>
+			<MainRouter
+				theme={theme}
+				toggleTheme={toggleTheme}
+				isMobile={isMobile}
+			/>
 		</body>
   	);
 }

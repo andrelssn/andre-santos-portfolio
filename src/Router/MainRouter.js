@@ -27,23 +27,19 @@ export default function MainRouter({ theme, toggleTheme, isMobile }) {
     };
 
     return (
-        <Box>
-            <BrowserRouter>
-                <Header selectedTab={selectedTab} handleChange={handleChange} theme={theme} toggleTheme={toggleTheme} isMobile={isMobile}/>
+        <BrowserRouter>
+            <Header selectedTab={selectedTab} handleChange={handleChange} theme={theme} toggleTheme={toggleTheme} isMobile={isMobile}/>
 
-                <div style={{ marginTop: "10vh" }}>
-                    <Routes>
-                        <Route path="/" element={<Home t={t} updateKeyHeader={updateKeyHeader}/>} />
-                        <Route path="/about" element={<About t={t} updateKeyHeader={updateKeyHeader}/>} />
-                        <Route path="/skills" element={<Skills t={t} updateKeyHeader={updateKeyHeader}/>} />
-                        <Route path="/education" element={<Education t={t} updateKeyHeader={updateKeyHeader}/>} />
-                        <Route path="/experience" element={<Experience updateKeyHeader={updateKeyHeader}/>} />
-                        <Route path="/projects" element={ <Projects updateKeyHeader={updateKeyHeader}/> } />
-                        <Route path="/recognitions" element={ <RecognitionsView updateKeyHeader={updateKeyHeader}/> } />
-                        <Route path="/contact" element={<Contact updateKeyHeader={updateKeyHeader}/>} />
-                    </Routes>
-                </div>
-            </BrowserRouter>
-        </Box>
+            <Routes>
+                <Route path="/" element={<Home t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/about" element={<About t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/skills" element={<Skills t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/education" element={<Education t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/experience" element={<Experience updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/projects" element={ <Projects updateKeyHeader={updateKeyHeader}/> } />
+                <Route path="/recognitions" element={ <RecognitionsView updateKeyHeader={updateKeyHeader}/> } />
+                <Route path="/contact" element={<Contact updateKeyHeader={updateKeyHeader}/>} />
+            </Routes>
+        </BrowserRouter>
     );
 }

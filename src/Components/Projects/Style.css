@@ -45,7 +45,7 @@
 
 .collapse-container {
     position: relative !important;
-    color: #ffffff !important;
+    color: var(--text) !important;
     width: 100% !important;
     padding: 8px 0px !important;
     background-color: var(--background) !important;

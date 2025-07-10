@@ -37,6 +37,7 @@ export default function Header(params) {
     const { i18n: {changeLanguage, language} }  = useTranslation();
     const [currentLanguage, setCurrentLanguage] = React.useState(language);
     const [drawerOpen, setDrawerOpen]           = React.useState(false);
+    const [updateTab, setUpdateTab]             = React.useState(1);
     const navigate = useNavigate();
 
     const handleChangeLanguage = () => {
@@ -45,6 +46,7 @@ export default function Header(params) {
         localStorage.setItem("language", newLanguage);
         setCurrentLanguage(newLanguage);
         changeLanguage(newLanguage);
+        setUpdateTab(updateTab + 1);
     }
 
     const toggleDrawer = (open) => () => {
@@ -139,7 +141,7 @@ export default function Header(params) {
                             }
                         </Box>
 
-                        <Box className="tabs-wrapper">
+                        <Box key={updateTab} className="tabs-wrapper">
                             <Tabs variant="scrollable" scrollButtons={"auto"} value={selectedTab} onChange={handleChange} sx={tabSx}>
                                 { menuList.map((item) => {
                                     return (

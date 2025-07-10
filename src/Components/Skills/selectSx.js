@@ -2,17 +2,17 @@
 export const styleSx = {
     '& .MuiOutlinedInput-root': {
         '& fieldset': {
-            borderColor: '#fff', // Cor da borda
+            borderColor: "var(--text)", // Cor da borda
         },
         '&:hover fieldset': {
-            borderColor: '#fff', // Cor ao passar o mouse
+            borderColor: "var(--text)", // Cor ao passar o mouse
         },
         '&.Mui-focused fieldset': {
-            borderColor: '#fff', // Cor ao focar
+            borderColor: "var(--text)", // Cor ao focar
             textShadow: " 0 0 3px #ffffff, 0 0 1px #ffffff"
         },
         "& .MuiSvgIcon-root": {
-            color: "#fff"
+            color: "var(--text)"
         },
     }
 };
@@ -20,13 +20,13 @@ export const styleSx = {
 export const props = {
     input: {
         style: {
-            color: "#fff",
-            borderColor: "#fff"
+            color: "var(--text)",
+            borderColor: "var(--text)"
         }
     },
     inputLabel: {
         style: {
-            color: "#fff",
+            color: "var(--text)",
             fontWeight: "bold"
         }
     },
@@ -34,13 +34,13 @@ export const props = {
         MenuProps: {
             sx: {
                 '& .MuiPaper-root': {
-                    backgroundColor: '#333',
-                    color: '#fff',
+                    backgroundColor: "var(--background)",
+                    color: "var(--text)",
                     borderRadius: '8px',
                 },
                 '& .MuiMenuItem-root': {
                     '&:hover': {
-                        backgroundColor: '#555',
+                        backgroundColor: "var(--background)",
                     },
                 },
             },

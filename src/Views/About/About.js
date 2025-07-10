@@ -2,12 +2,15 @@ import { Trans } from "react-i18next";
 import { Box, Fade, Typography } from "@mui/material";
 
 // Style
-import "./Style.css";
 
 // IMG
 import image from "../../images/andreimage.jpg";
+import React from "react";
 
-export default function About({ t }) {
+export default function About({ t, updateKeyHeader }) {
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
 
     if(!image) return null;
 
@@ -19,7 +22,7 @@ export default function About({ t }) {
                         <img src={image} className="img-style-about" alt=""/>
                     </div>
 
-                    <Typography color="var(--main-text)" textAlign={"center"} fontWeight={"bold"}>
+                    <Typography color="var(--text)" textAlign={"center"} fontWeight={"bold"}>
                         André Santos <br/>
                         23 <Trans t={t}>anos</Trans> <br/>
                         <Trans t={t}>Desenvolvedor de Software</Trans> <br/>

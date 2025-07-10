@@ -1,5 +1,6 @@
 import React from "react";
 import {CircularProgress, Fade, MenuItem, TextField, Typography } from "@mui/material";
+import { Trans } from "react-i18next";
 
 // img
 import srbr from "../../images/certificate.jpg";
@@ -7,7 +8,6 @@ import srbr from "../../images/certificate.jpg";
 // Styles
 import "./Style.css";
 import { props, styleSx } from "../Skills/selectSx";
-import { Trans } from "react-i18next";
 
 const certificates = [
     "Samsung R&D Brazil",
@@ -39,8 +39,8 @@ export default function RecognitionsList() {
                     </TextField>
                 </div>
 
-                <div className="certificates-div">
-                    <Typography p={2} bgcolor={"var(--purple)"} color="#ffffff" fontWeight={"bold"}>
+                <div className="certificate-div">
+                    <Typography p={2} bgcolor={"var(--secondary)"} color="#ffffff" fontWeight={"bold"}>
                         {!option ? <Trans>Select an option</Trans> : <Trans>Certificado de Reconhecimento</Trans>}
                     </Typography>
 

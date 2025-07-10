@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 // Components
 import Header from "../Layout/Header/Header";
@@ -13,76 +13,32 @@ import Experience from "../Views/Experience/Experience";
 import Projects from "../Views/Projects/Projects";
 import RecognitionsView from "../Views/Recognitions/RecognitionsView";
 
-export default function MainRouter() {
+export default function MainRouter({ theme, toggleTheme, isMobile }) {
     const { t } = useTranslation();
     const [selectedTab, setSelectedTab] = React.useState(null);
-    const [pageName, setPageName]       = React.useState("Olá! Seja Bem-Vindo!");
-    const [update, setUpdate]           = React.useState(1);
 
-    React.useEffect(() => {
-        const path = window.location.pathname.substring(0);
-
-        if(path === "/"){
-            setPageName(<Trans t={t}>Olá! Seja Bem-Vindo!</Trans>)
-            setSelectedTab("home");
-        }
-
-        if(path === "/about"){
-            setPageName(<Trans t={t}>Conheça mais sobre mim!</Trans>)
-            setSelectedTab("about");
-        }
-
-        if(path === "/skills"){
-            setPageName(<Trans t={t}>Conheça minhas qualificações!</Trans>)
-            setSelectedTab("skills");
-        }
-
-        if(path === "/education"){
-            setPageName(<Trans t={t}>Uma visão geral de minha trilha acadêmica.</Trans>)
-            setSelectedTab("education");
-        }
-
-        if(path === "/experience"){
-            setPageName(<Trans t={t}>Saiba mais sobre minhas experiências!</Trans>)
-            setSelectedTab("experience");
-        }
-
-        if(path === "/projects"){
-            setPageName(<Trans t={t}>Projetos já desenvolvidos até o momento.</Trans>)
-            setSelectedTab("projects");
-        }
-
-        if(path === "/recognitions"){
-            setPageName(<Trans t={t}>Confira os reconhecimentos que já recebi!</Trans>)
-            setSelectedTab("recognitions");
-        }
-
-        if(path === "/contact"){
-            setPageName(<Trans t={t}>Vamos criar soluções inovadoras juntos?</Trans>)
-            setSelectedTab("contact");
-        }
-    }, [selectedTab, update, t]);
+    function updateKeyHeader(value) {
+        setSelectedTab(value);
+    };
 
     const handleChange = (event, newValue) => {
         setSelectedTab(newValue);
     };
 
     return (
-        <div class="container">
-            <BrowserRouter>
-                <Header selectedTab={selectedTab} pageName={pageName} handleChange={handleChange} update={update} setUpdate={setUpdate}/>
+        <BrowserRouter>
+            <Header selectedTab={selectedTab} handleChange={handleChange} theme={theme} toggleTheme={toggleTheme} isMobile={isMobile}/>
 
-                <Routes>
-                    <Route path="/" element={<Home t={t}/>} />
-                    <Route path="/about" element={<About t={t}/>} />
-                    <Route path="/skills" element={<Skills handleChange={handleChange} t={t}/>} />
-                    <Route path="/education" element={<Education t={t}/>} />
-                    <Route path="/experience" element={<Experience />} />
-                    <Route path="/projects" element={ <Projects/> } />
-                    <Route path="/recognitions" element={ <RecognitionsView/> } />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
+            <Routes>
+                <Route path="/" element={<Home t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/about" element={<About t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/skills" element={<Skills t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/education" element={<Education t={t} updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/experiences" element={<Experience updateKeyHeader={updateKeyHeader}/>} />
+                <Route path="/projects" element={ <Projects updateKeyHeader={updateKeyHeader}/> } />
+                <Route path="/recognitions" element={ <RecognitionsView updateKeyHeader={updateKeyHeader}/> } />
+                <Route path="/contact" element={<Contact updateKeyHeader={updateKeyHeader}/>} />
+            </Routes>
+        </BrowserRouter>
     );
 }

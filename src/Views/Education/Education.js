@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Typography, Divider, Box, Tabs, Tab } from "@mui/material";
+import { Fade, Typography, Divider, Box, Tabs, Tab, Collapse, Button } from "@mui/material";
 import { Trans } from "react-i18next";
 
 // Styles
@@ -10,26 +10,29 @@ import Certificates from "../../Components/Certificates/Certificates";
 
 const tabSx = {
     "& .MuiTabs-indicator": {
-        backgroundColor: "var(--purple)",
+        backgroundColor: "var(--secondary)",
     },
     "& .MuiButtonBase-root.MuiTab-root": {
-        color: "#cecece",
+        color: "var(--text)",
         fontWeight: "bold",
         transition: "color 0.2s ease-in-out",
         "&:hover": {
-            color: "var(--purple)",
+            color: "var(--secondary)",
         },
         "&.Mui-selected": {
-            color: "var(--purple)",
+            color: "var(--secondary)",
             fontWeight: "bold",
-            backgroundColor: "var(--test)"
         },
     },
 };
 
+export default function Education({ updateKeyHeader }) {
+    const [value, setValue]             = React.useState(0);
+    const [openDetails, setOpenDetails] = React.useState(false);
 
-export default function Education({ t }) {
-    const [value, setValue] = React.useState(0);
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
 
     const handleChangeTab = (event, newValue) => {
       setValue(newValue);
@@ -37,7 +40,7 @@ export default function Education({ t }) {
 
     return (
         <Fade in={true}>
-            <nav className="education-container">
+            <section className="education-container">
                 <Box className="up-side-education">
                     <Tabs
                         orientation="horizontal"
@@ -47,7 +50,7 @@ export default function Education({ t }) {
                         variant="scrollable"
                         scrollButtons
                         allowScrollButtonsMobile
-                        TabScrollButtonProps={{ style: { color: "var(--purple)" } }}
+                        TabScrollButtonProps={{ style: { color: "var(--secondary)" } }}
                     >
                         <Tab label={<Trans>Escolaridade</Trans>} className="tab-button"/>
                         <Tab label={<Trans>Certificações</Trans>} className="tab-button"/>
@@ -59,24 +62,38 @@ export default function Education({ t }) {
                         ? <Fade in={true}>
                             <nav className="bottom-side-education">
                                 <section className="education-section">
-                                    <Typography fontSize={26} color="var(--main-text)">
+                                    <Typography fontSize={26} color="var(--text)">
                                         <Trans>Ensino Superior</Trans>
                                     </Typography>
 
-                                    <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
+                                    <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
 
-                                    <span style={{ fontWeight: "bold" }}>Centro Universitário UniMetrocamp - Wyden</span><br/>
-                                    <span><Trans>Bacharelado em Ciências da Computação</Trans></span><br/>
+                                    <span style={{ fontWeight: "bold", fontSize: 18 }}>
+                                        <Trans>Bacharelado em Ciências da Computação</Trans>
+                                    </span><br/>
+                                    <span>Centro Universitário UniMetrocamp - Wyden</span><br/>
                                     <span>Campinas, São Paulo</span><br/>
-                                    <span>2021 - 2025</span>
+                                    <span>2021 - 2025</span><br/><br/>
+
+                                    <Button fullWidth onClick={() => setOpenDetails(!openDetails)} className="global-btn-style">
+                                        <Trans>Ver Detalhes</Trans>
+                                    </Button>
+
+                                    <Collapse in={openDetails}>
+                                        <ul style={{ backgroundColor: "var(--background)", borderRadius: 5, color: "var(--text)", padding: "20px 40px" }}>
+                                            <li>Outreach project in Python (Influenza data management system)</li>
+                                            <li>Outreach project using Azure and Arduino (Motion detection system)</li>
+                                            <li>Hands-on laboratory sessions using programming languages such as C/C++, Python, Java, JavaScript, and PHP</li>
+                                        </ul>
+                                    </Collapse>
                                 </section>
 
                                 <section className="education-section">
-                                    <Typography fontSize={26} color="var(--main-text)">
+                                    <Typography fontSize={26} color="var(--text)">
                                         <Trans>Ensino Médio & Fundamental</Trans>
                                     </Typography>
 
-                                    <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
+                                    <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
 
                                     <span style={{ fontWeight: "bold" }}>Escola Estadual Monsenhor Luis Gonzaga de Moura</span><br/>
                                     <span>Campinas, São Paulo</span><br/>
@@ -94,7 +111,7 @@ export default function Education({ t }) {
                 }
 
                 { value === 1 ? <Certificates/> : <></> }
-            </nav>
+            </section>
         </Fade>
     );
 }

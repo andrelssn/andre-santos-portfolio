@@ -1,28 +1,34 @@
+import React from "react";
 import { Fade, Typography, Divider } from "@mui/material";
 import { Trans } from "react-i18next";
 
 import "./Style.css";
 
-export default function Experience() {
+export default function Experience({ updateKeyHeader }) {
+
+    React.useEffect(() => {
+        updateKeyHeader(window.location.pathname.substring(0));
+    }, []);
+
     return (
         <Fade in={true}>
-            <nav className="experience-container">
+            <div className="experience-container">
                 <section className="experience-section">
-                    <Typography fontSize={26} color="var(--main-text)">
+                    <Typography fontSize={26} color="var(--text)">
                         <Trans>Desenvolvedor Full-Stack</Trans>
                     </Typography>
 
-                    <Divider sx={{ backgroundColor: "var(--main-text)", mt: 0.5, mb: 2 }}/>
+                    <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
 
                     <div className="job-information-box">
                         <div className="info-section-job" style={{ maxWidth: 200 }}>
                             <span style={{ fontWeight: "bold" }}>Samsung R&D Brasil</span><br/>
                             <span><Trans>Estágio</Trans></span><br/>
                             <span>Campinas, São Paulo</span><br/>
-                            <span>Jun/2023 - <Trans>Até o momento</Trans></span>
+                            <span>Jun/2023 - Jun/2025</span>
                         </div>
 
-                        <div className="info-section-job" style={{ paddingLeft: 10, borderLeft: "1px solid var(--main-text)" }}>
+                        <div className="info-section-job" style={{ paddingLeft: 10 }}>
                             <ul className="ul-list">
                                 <li>
                                     <Trans>Práticas de desenvolvimento full-stack, tendo como principal ferramenta para front-end o ReactJS, e o back-end sendo feito com PHP e Laravel.</Trans>
@@ -42,13 +48,13 @@ export default function Experience() {
                             </ul>
                         </div>
 
-                        <div className="info-section-job" style={{ paddingLeft: 10, borderLeft: "1px solid var(--main-text)", maxWidth: 200 }}>
+                        <div className="info-section-job" style={{ paddingLeft: 10, maxWidth: 200 }}>
                             <span style={{ fontWeight: "bold" }}><Trans>Competências</Trans></span><br/>
                             <span>JavaScript, ReactJS, HTML & CSS, PHP, MySQL, NodeJS, Laravel, CodeIgniter, UX/UI, API Rest, JIRA</span>
                         </div>
                     </div>
                 </section>
-            </nav>
+            </div>
         </Fade>
     );
 }

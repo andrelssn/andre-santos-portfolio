@@ -86,7 +86,8 @@ const resources = {
             "Básico": "Basic",
             "Intermediário": "Intermediate",
             "Avançado": "Advanced",
-            "Proficiente": "Proficient"
+            "Proficiente": "Proficient",
+            "Ver Detalhes": "More Details"
         }
     }
 };

@@ -40,6 +40,16 @@
   --text:                 #111111;
 }
 
+.global-btn-style {
+  color: var(--text) !important;
+  background-color: var(--secondary2) !important;
+}
+
+.global-btn-style:hover {
+  color: var(--text) !important;
+  background-color: var(--secondary) !important;
+}
+
 .link-fix {
   color: #71bafd !important;
   text-decoration: none;

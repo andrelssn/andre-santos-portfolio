@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Typography, Divider, Box, Tabs, Tab } from "@mui/material";
+import { Fade, Typography, Divider, Box, Tabs, Tab, Collapse, Button } from "@mui/material";
 import { Trans } from "react-i18next";
 
 // Styles
@@ -13,7 +13,7 @@ const tabSx = {
         backgroundColor: "var(--secondary)",
     },
     "& .MuiButtonBase-root.MuiTab-root": {
-        color: "#cecece",
+        color: "var(--text)",
         fontWeight: "bold",
         transition: "color 0.2s ease-in-out",
         "&:hover": {
@@ -22,14 +22,13 @@ const tabSx = {
         "&.Mui-selected": {
             color: "var(--secondary)",
             fontWeight: "bold",
-            backgroundColor: "var(--test)"
         },
     },
 };
 
-
 export default function Education({ updateKeyHeader }) {
-    const [value, setValue] = React.useState(0);
+    const [value, setValue]             = React.useState(0);
+    const [openDetails, setOpenDetails] = React.useState(false);
 
     React.useEffect(() => {
         updateKeyHeader(window.location.pathname.substring(0));
@@ -41,7 +40,7 @@ export default function Education({ updateKeyHeader }) {
 
     return (
         <Fade in={true}>
-            <nav className="education-container">
+            <section className="education-container">
                 <Box className="up-side-education">
                     <Tabs
                         orientation="horizontal"
@@ -69,10 +68,24 @@ export default function Education({ updateKeyHeader }) {
 
                                     <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
 
-                                    <span style={{ fontWeight: "bold" }}>Centro Universitário UniMetrocamp - Wyden</span><br/>
-                                    <span><Trans>Bacharelado em Ciências da Computação</Trans></span><br/>
+                                    <span style={{ fontWeight: "bold", fontSize: 18 }}>
+                                        <Trans>Bacharelado em Ciências da Computação</Trans>
+                                    </span><br/>
+                                    <span>Centro Universitário UniMetrocamp - Wyden</span><br/>
                                     <span>Campinas, São Paulo</span><br/>
-                                    <span>2021 - 2025</span>
+                                    <span>2021 - 2025</span><br/><br/>
+
+                                    <Button fullWidth onClick={() => setOpenDetails(!openDetails)} className="global-btn-style">
+                                        <Trans>Ver Detalhes</Trans>
+                                    </Button>
+
+                                    <Collapse in={openDetails}>
+                                        <ul style={{ backgroundColor: "var(--background)", borderRadius: 5, color: "var(--text)", padding: "20px 40px" }}>
+                                            <li>Outreach project in Python (Influenza data management system)</li>
+                                            <li>Outreach project using Azure and Arduino (Motion detection system)</li>
+                                            <li>Hands-on laboratory sessions using programming languages such as C/C++, Python, Java, JavaScript, and PHP</li>
+                                        </ul>
+                                    </Collapse>
                                 </section>
 
                                 <section className="education-section">
@@ -98,7 +111,7 @@ export default function Education({ updateKeyHeader }) {
                 }
 
                 { value === 1 ? <Certificates/> : <></> }
-            </nav>
+            </section>
         </Fade>
     );
 }

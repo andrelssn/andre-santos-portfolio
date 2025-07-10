@@ -2,7 +2,6 @@ import { Trans } from "react-i18next";
 import { Box, Fade, Typography } from "@mui/material";
 
 // Style
-import "./Style.css";
 
 // IMG
 import image from "../../images/andreimage.jpg";

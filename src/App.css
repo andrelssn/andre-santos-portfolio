@@ -59,9 +59,8 @@ body::after {
 }
 
 body {
-  position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   --c: var(--background-spark);
   background-color: var(--background);
   background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),

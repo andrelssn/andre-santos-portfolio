@@ -9,6 +9,7 @@
     position: relative !important;
     margin: auto !important;
     overflow: auto !important;
+    margin-top: 100px !important;
 }
 
 .nav-box {
@@ -25,7 +26,6 @@
     max-width: 200px !important;
     background-color: var(--header);
     border-radius: 36px;
-    box-shadow: 3px 3px 20px -5px #00000080 !important;
 }
 
 .icons-skills {
@@ -44,13 +44,13 @@
     max-width: 800px !important;
 }
 
-.certificates-div {
+.certificate-div {
     position: relative !important;
     justify-self: center !important;
     display: grid;
     margin: 20px !important;
     width: 90% !important;
     max-width: 800px !important;
-    border: 2px solid #666666;
+    border: 1px solid var(--border);
     border-radius: 4px;
 }

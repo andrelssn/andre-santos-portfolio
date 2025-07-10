@@ -22,6 +22,7 @@
   --red-system-strong:    #681010;
   --red-system-light:     #df8181;
   --text:                 #fffffe;
+  --text-secondary:       #b1b1b1;
 }
 
 [data-theme='light'] {
@@ -38,6 +39,7 @@
   --red-system-strong:    #681010;
   --red-system-light:     #df8181;
   --text:                 #111111;
+  --text-secondary:       #525252;
 }
 
 .global-btn-style {

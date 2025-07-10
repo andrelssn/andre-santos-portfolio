@@ -1,10 +1,6 @@
 .projects-container {
     justify-self: center !important;
     width: 95% !important;
-    margin-top: 30px !important;
-    border: 3px solid var(--header) !important;
     border-radius: 6px !important;
-    background-color: #1B1B1E !important;
     overflow: auto !important;
-    border-radius: 36px !important;
 }

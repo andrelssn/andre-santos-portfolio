@@ -57,6 +57,14 @@
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+	html, body, #root {
+		height: 100%;
+		margin: 0;
+    background: var(--background) !important;
+	}
+}
+
 body::after {
   content: "";
   inset: 0;

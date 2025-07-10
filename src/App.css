@@ -7,34 +7,13 @@
 	font-family: 'Roboto-Regular', sans-serif !important;
 }
 
-@media (max-width: 768px) {
-	body {
-    height: 100%;
-		margin: 0;
-    background: #16161a;
-    background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		background-position: center;
-	}
-}
-
-@media (min-width: 768px) {
-	body {
-		height: 100vh !important;
-		margin: 0;
-    background: #16161a;
-    background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: cover;
-		background-position: center;
-	}
-}
 
 :root {
   --background:           #16161a;
+  --background-light:     #2c2c35;
   --background-spark:     #2c2c2c;
-  --header:             	#2426294f;
+  --border:               #3a3a3a;
+  --header:             	#242629a8;
   --page:                 #16161a;
   --secondary:            #FF914D;
   --secondary2:           #ff7c2b;
@@ -47,8 +26,10 @@
 
 [data-theme='light'] {
   --background:           #ffffff;
+  --background-light:     #e2e2e2;
   --background-spark:     #e7e7e7;
-  --header:             	#e0e0e0a4;
+  --border:               #cfcfcf;
+  --header:             	#e0e0e0ab;
   --page:                 #dfdfdf;
   --secondary:            #FF914D;
   --secondary2:           #ff7c2b;
@@ -64,7 +45,7 @@
   text-decoration: none;
 }
 
-.container::after {
+body::after {
   content: "";
   inset: 0;
   z-index: 1;
@@ -77,7 +58,7 @@
   background-size: 25px 8px;
 }
 
-.container {
+body {
   position: relative;
   width: 100%;
   height: 100%;

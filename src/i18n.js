@@ -79,7 +79,14 @@ const resources = {
             "Email para contato": "Contact Email",
             "Enviar e-mail": "Send Email",
             "Redes Sociais": "Social Media",
-            "Repositório do Projeto": "Project Repository"
+            "Repositório do Projeto": "Project Repository",
+            "Proatividade": "Proactiveness",
+            "Clique em uma estrela para ver o nivel que ela representa": "Click on a star to see the level it represents",
+            "Iniciante": "Starter",
+            "Básico": "Basic",
+            "Intermediário": "Intermediate",
+            "Avançado": "Advanced",
+            "Proficiente": "Proficient"
         }
     }
 };

@@ -23,7 +23,7 @@ function App() {
 	};
 
   	return (
-    	<body>
+    	<body id="body">
 			<div class="container">
 				<MainRouter
 					theme={theme}

@@ -34,11 +34,13 @@
 }
 
 .btn-projects:hover {
-    color: #aaaaaa !important;
+    color: var(--text) !important;
+    background-color: var(--secondary);
 }
 
 .btn-projects-selected {
-    color: var(--secondary) !important;
+    color: var(--text) !important;
+    background-color: var(--secondary2) !important;
 }
 
 .collapse-container {

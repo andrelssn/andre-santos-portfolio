@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Box } from "@mui/material";
 
 // Components
 import Header from "../Layout/Header/Header";

@@ -46,7 +46,9 @@ export default function FcCareer(){
                         </Button>
                     </div>
 
-                    <span style={{ color: "#cecece" }}><Trans>versão</Trans> 1.0.0</span>
+                    <span style={{ color: "var(--text-secondary)" }}>
+                        <Trans>versão</Trans> 1.0.0
+                    </span>
 
                     <div style={{ margin: "10px 0px" }}>
                         <Button className={openLog ? "btn-projects-selected" : "btn-projects"} onClick={() => handleOpenClose("log")}>

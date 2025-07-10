@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, Typography, Button, Collapse, Box, colors } from "@mui/material";
+import { Fade, Typography, Button, Collapse, Box } from "@mui/material";
 import { Trans } from "react-i18next";
 
 // Style
@@ -30,13 +30,13 @@ export default function Portfolio(){
             <section className="projects-section">
                 <div style={{ flexWrap: "wrap" }}>
                     <div style={{ display: "flex", alignItems: "center", position: "relative", minWidth: 250, flex: 1 }}>
-                        <img src={webicon} style={{ width: 30, marginRight: 5 }}/>
+                        <img alt="webicon" src={webicon} style={{ width: 30, marginRight: 5 }}/>
                         <Typography fontSize={26} color="var(--text)">
                             Portfolio André Santos
                         </Typography>
                     </div>
 
-                    <span style={{ color: "#cecece" }}><Trans>versão</Trans> 1.0.0</span>
+                    <span style={{ color: "#cecece" }}><Trans>versão</Trans> 2.0.0</span>
 
                     <div style={{ margin: "10px 0px" }}>
                         <Button className={openLog ? "btn-projects-selected" : "btn-projects"} onClick={() => handleOpenClose("log")}>
@@ -56,7 +56,55 @@ export default function Portfolio(){
                             <Box sx={{ borderLeft: "1px solid var(--secondary)", p: 2, m: "5px 20px" }}>
                                 <ul>
                                     <li style={{ color: "var(--secondary)" }}>
-                                        <span style={{ color: "var(--secondary)" }}>1.0.0 - <Trans>Primeira versão do sistema</Trans></span>
+                                        <span>2.0.0</span>
+
+                                        <ul style={{ marginTop: 5 }}>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Nova iInterface moderna</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Melhor responsividade para mobile</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Padronização de cores</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Novas informações</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>DarkMode & LightMode</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Novo icone e nome</Trans>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <br/>
+
+                                    <li style={{ color: "var(--secondary)" }}>
+                                        <span>1.1.0</span>
+
+                                        <ul style={{ marginTop: 5 }}>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Nova Fonte Adicionada</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Background Animado</Trans>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <br/>
+
+                                    <li style={{ color: "var(--secondary)" }}>
+                                        <span>1.0.0</span>
+
+                                        <ul style={{ marginTop: 5 }}>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Primeira versão do sistema</Trans>
+                                            </li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </Box>
@@ -153,7 +201,7 @@ export default function Portfolio(){
                                 <br/>
 
                                 <div>
-                                    <Button className="repositorio-btn" size="small" href="https://github.com/andrelssn/my-portfolio" endIcon={<LaunchIcon/>}>
+                                    <Button className="global-btn-style" size="small" href="https://github.com/andrelssn/andre-santos-portfolio" endIcon={<LaunchIcon/>}>
                                         <Trans>Repositório do Projeto</Trans>
                                     </Button>
                                 </div>

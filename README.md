@@ -34,6 +34,7 @@ E por último, basta rodar o comando `npm start` e o sistema estará pronto para
 
 ## Versões
 
+- 2.0.0 - [Ver Patch Notes](https://github.com/andrelssn/andre-santos-portfolio/releases/tag/v2.0.0)
 - 1.1.0 - [Ver Patch Notes](https://github.com/andrelssn/andre-santos-portfolio/releases/tag/v1.1.0)
 - 1.0.0 - Primeira versão do projeto
 

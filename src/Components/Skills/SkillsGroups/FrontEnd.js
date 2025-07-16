@@ -39,7 +39,7 @@ export const FrontEndList = [
     },
     {
         label: "Next",
-        level: 1,
+        level: 2,
         img: next
     },
     {
@@ -49,7 +49,7 @@ export const FrontEndList = [
     },
     {
         label: "Bootstrap",
-        level: 1,
+        level: 2,
         img: boot
     },
     {

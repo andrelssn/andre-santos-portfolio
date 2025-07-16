@@ -7,7 +7,7 @@ import srbr from "../../images/certificate.jpg";
 
 // Styles
 import "./Style.css";
-import { props, styleSx } from "../Skills/selectSx";
+import { props, styleSx } from "../Skills/Styles/StylesSx";
 
 const certificates = [
     "Samsung R&D Brazil",

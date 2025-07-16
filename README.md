@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Bem-Vindo ao meu Portfolio Pessoal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um sistema desenvolvido para apresentar detalhes sobre minha pessoa e também sobre meu trabalho.
 
-## Available Scripts
+Com um design básico e responsivo, o portfólio permite que recrutadores, clientes e colaboradores visualizem as informações de maneira clara e organizada. Além disso, a estrutura do projeto facilita futuras atualizações e expansões, garantindo que ele permaneça relevante ao longo do tempo.
 
-In the project directory, you can run:
+## Link Produção
 
-### `npm start`
+[Acesse aqui](https://andre-santos-dev.vercel.app/projects)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para o desenvolvimento do sistema foi utilizado:
+ - React.js
+ - Material UI
+ - i18n
+ - React Router Dom
+ - Styled Components
+ - Visual Studio Code
+ - Node (pacotes)
+ - Vercel (PROD)
 
-### `npm test`
+## Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para rodar o projeto localmente, recomendamos utilizar o Visual Studio Code com o terminal embutido.
+Também é de extrema importância ter Node com NPM instalado no seu sistema.
 
-### `npm run build`
+Ao abrir o projeto no seu ambiente, deverá rodar o seguinte comando para instalação dos pacotes.
+`npm install --legacy-peer-deps`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Após instalado todas as libs, descomente o arquivo `.envdev` e acrescente a URL da api rodando localmente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+E por último, basta rodar o comando `npm start` e o sistema estará pronto para utilização!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Versões
 
-### `npm run eject`
+- 2.0.0 - [Ver Patch Notes](https://github.com/andrelssn/andre-santos-portfolio/releases/tag/v2.0.0)
+- 1.1.0 - [Ver Patch Notes](https://github.com/andrelssn/andre-santos-portfolio/releases/tag/v1.1.0)
+- 1.0.0 - Primeira versão do projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+`English Version`
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Welcome to My Personal Portfolio
 
-### Code Splitting
+This system was developed to present details about myself and my work.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+With a simple and responsive design, the portfolio enables recruiters, clients, and collaborators to view information in a clear and organized manner. Moreover, the project’s structure makes it easy to apply future updates and expansions, ensuring it remains relevant over time.
 
-### Analyzing the Bundle Size
+## Production Link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Access here](https://andre-santos-dev.vercel.app/projects)
 
-### Making a Progressive Web App
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The system was built using:
+ - React.js  
+ - Material UI  
+ - i18n  
+ - React Router DOM  
+ - Styled Components  
+ - Visual Studio Code  
+ - Node (packages)  
+ - Vercel (Production)
 
-### Advanced Configuration
+## Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To run the project locally, we recommend using Visual Studio Code with the built-in terminal.  
+It's also essential to have Node with NPM installed on your system.
 
-### Deployment
+Once the project is open in your environment, run the following command to install the packages:  
+`npm install --legacy-peer-deps`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+After all libraries are installed, uncomment the `.envdev` file and add the URL of your locally running API.
 
-### `npm run build` fails to minify
+Finally, just run the command `npm start` and the system will be ready for use!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Versions
+
+- 1.1.0 – [See Patch Notes](https://github.com/andrelssn/andre-santos-portfolio/releases/tag/v1.1.0)  
+- 1.0.0 – Initial release of the project

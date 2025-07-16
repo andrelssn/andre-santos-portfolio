@@ -13,7 +13,7 @@ import wiseup from "../../images/certificates/wiseup.png";
 
 // Styles
 import "./Style.css";
-import { props, styleSx } from "../Skills/selectSx";
+import { props, styleSx } from "../Skills/Styles/StylesSx";
 
 const certificates = [
     "APIs Nodejs, Express + MongoDB, SQL",

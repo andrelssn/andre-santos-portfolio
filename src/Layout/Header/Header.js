@@ -10,8 +10,6 @@ import logoLight from "../../images/site-logo/logo-light.png";
 import logoDark from "../../images/site-logo/logo-dark.png";
 
 // Icons
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import MenuIcon from '@mui/icons-material/Menu';
 
 // Style
@@ -19,7 +17,7 @@ import "./Style.css";
 
 // Prop
 import { tabSx } from "../../Components/Props/Styles";
-import { props, styleSx } from "../../Components/Skills/selectSx";
+import { props, styleSx } from "../../Components/Skills/Styles/StylesSx";
 import { menuList } from "../MenuDrawer/MenuItem";
 
 // Components
@@ -187,14 +185,14 @@ export default function Header(params) {
                                 >
                                     <MenuItem value="pt" >
                                         <span style={{ display: "flex" }}>
-                                            <img src={pt} style={{ width: 20, height: 20, marginRight: 5 }}/>
+                                            <img alt="ptbr" src={pt} style={{ width: 20, height: 20, marginRight: 5 }}/>
                                             Português
                                         </span>
                                     </MenuItem>
 
                                     <MenuItem value="en">
                                         <span style={{ display: "flex" }}>
-                                            <img src={en} style={{ width: 20, height: 20, marginRight: 5 }}/>
+                                            <img alt="en" src={en} style={{ width: 20, height: 20, marginRight: 5 }}/>
                                             English
                                         </span>
                                     </MenuItem>

@@ -11,6 +11,7 @@ import BackEndSkills from "../../Components/Skills/BackEndSkills";
 import ToolsTechSkills from "../../Components/Skills/ToolsTechSkills";
 import MethodologiesSkills from "../../Components/Skills/MethodologiesSkills";
 import SoftPowerSkills from "../../Components/Skills/SoftPowerSkills";
+import MobileSkills from "../../Components/Skills/MobileSkills";
 
 // const tabSx = {
 //     "& .MuiTabs-indicator": {
@@ -106,6 +107,14 @@ export default function Skills({ t, updateKeyHeader }) {
 
                 <Box className="bottom-side-skills">
                     <BackEndSkills />
+                </Box>
+
+                <Typography className="stack-type-card">
+                    Mobile
+                </Typography>
+
+                <Box className="bottom-side-skills">
+                    <MobileSkills />
                 </Box>
 
                 <Typography className="stack-type-card">

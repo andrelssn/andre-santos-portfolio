@@ -7,8 +7,6 @@
 .certificates-container {
     width: 100% !important;
     position: relative !important;
-    margin: auto !important;
-    overflow: auto !important;
 }
 
 .nav-box {

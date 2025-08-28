@@ -16,7 +16,6 @@
   transition: all 0.4s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  animation: fadeInUp 0.8s ease forwards;
 }
 
 .card:hover {
@@ -49,7 +48,7 @@
 .card-content .MuiTypography-root {
   font-size: 1rem;
   font-weight: bold;
-  color: var(--secondary);
+  color: var(--text);
   margin-top: 0.4rem;
 }
 

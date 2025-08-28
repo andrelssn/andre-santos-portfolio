@@ -1,130 +1,78 @@
 .skill-container {
-    position: relative !important;
-    width: 100%;
-    padding: 20px 10px;
-}
-
-.certificates-container {
-    position: relative !important;
-    margin: auto !important;
-    overflow: auto !important;
-}
-
-.nav-box {
-    flex: 1 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    color: #fff !important;
-    margin: 40px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 200px !important;
-    background-color: var(--header);
-    border-radius: 36px;
-    box-shadow: 3px 3px 20px -5px #00000080 !important;
-}
-
-.icons-skills {
-    width: 100px !important;
-    margin-bottom: 20px;
-}
-
-.select-div {
-    width: 400px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.img-certificates {
-    width: 700px !important;
-}
-
-.certificates-div {
-    display: grid;
-    margin: auto !important;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-    width: 700px !important;
-    border: 2px solid #666666;
-    border-radius: 4px;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .card {
-    width: 300px;
-    height: 130px;
-    background-color: var(--background-light);
-    background-image: linear-gradient(43deg, var(--background-light) 0%, var(--background) 46%, var(--background-light) 100%);
-    border-radius: 8px;
-    color: white;
-    overflow: hidden;
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    cursor: pointer;
-}
-
-.card-content {
-    padding: 17px 20px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    color: white;
-    align-items: center;
-    text-align: center;
-}
-
-.card-content .card-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: inherit;
-    text-transform: uppercase;
-}
-
-.card-content .card-para {
-    color: inherit;
-    opacity: 0.8;
-    font-size: 14px;
+  width: 200px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  animation: fadeInUp 0.8s ease forwards;
 }
 
 .card:hover {
-    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 147, 58, 0.3);
+  border: 1px solid rgba(255, 153, 58, 0.4);
 }
 
-.card:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    z-index: 1;
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: 1rem;
 }
 
-.card:hover:before {
-    transform: translateX(-100%);
+.icons-skills {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.card:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-    z-index: 1;
+.card:hover .icons-skills {
+  transform: scale(1.15) rotate(3deg);
 }
 
-.card:hover:after {
-    transform: translateX(100%);
+.card-content h6,
+.card-content .MuiTypography-root {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-top: 0.4rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 160px;
+    height: 190px;
+  }
+
+  .icons-skills {
+    width: 50px;
+    height: 50px;
+  }
 }

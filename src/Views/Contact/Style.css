@@ -1,39 +1,75 @@
 .contact-container {
-    justify-self: center !important;
-    width: 95% !important;
-    overflow: auto !important;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    animation: fadeIn 1s ease forwards;
 }
 
 .contact-section {
-    font-size: 21px;
-    color: var(--text);
-    margin: auto;
-    padding: 20px 30px;
-    margin: 30px !important;
-    background-color: var(--header) !important;
-    border-radius: 10px;
-    overflow: auto !important;
+    text-align: center;
+    background-color: var(--page);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-section span {
-    font-size: 21px;
-    color: var(--secondary);
-    font-weight: bold !important;
+.contact-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(255, 176, 58, 0.6);
 }
 
 .email-anchor {
-    font-size: 18px !important;
-    color: var(--text);
-    padding: 10px 25px;
-    text-decoration: none !important;
-    border-radius: 20px !important;
-    background-color: var(--page);
-    border: 2px solid var(--page) !important;
-    overflow: auto !important;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--secondary);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .email-anchor:hover {
-    color: var(--secondary) !important;
-    background-color: #242424 !important;
-    border: 2px solid var(--secondary) !important;
+    background-color: var(--secondary2);
+    transform: scale(1.05);
+}
+
+.social-btn {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.social-btn svg {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .social-btn {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .social-btn svg {
+        font-size: 40px;
+    }
+
+    .contact-section {
+        padding: 1.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }

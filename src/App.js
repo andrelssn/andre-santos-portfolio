@@ -11,7 +11,8 @@ function App() {
     const themeWeb = useTheme();
     const isMobile = useMediaQuery(themeWeb.breakpoints.down('md'));
 
-	const [theme, setTheme] = React.useState(!localStorage.getItem('theme') ? 'dark' : localStorage.getItem('theme'));
+	// const [theme, setTheme] = React.useState(!localStorage.getItem('theme') ? 'dark' : localStorage.getItem('theme'));
+	const [theme, setTheme] = React.useState('dark');
 
 	React.useEffect(() => {
 		document.documentElement.setAttribute('data-theme', theme);
@@ -23,13 +24,13 @@ function App() {
 	};
 
   	return (
-    	<body id="body">
+    	<main>
 			<MainRouter
 				theme={theme}
 				toggleTheme={toggleTheme}
 				isMobile={isMobile}
 			/>
-		</body>
+		</main>
   	);
 }
 

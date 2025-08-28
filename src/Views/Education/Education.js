@@ -75,7 +75,7 @@ export default function Education({ updateKeyHeader }) {
                                     <span>Campinas, São Paulo</span><br/>
                                     <span>2021 - 2025</span><br/><br/>
 
-                                    <Button fullWidth onClick={() => setOpenDetails(!openDetails)} className="global-btn-style">
+                                    <Button fullWidth onClick={() => setOpenDetails(!openDetails)} className="btn-style-education">
                                         <Trans>Ver Detalhes</Trans>
                                     </Button>
 

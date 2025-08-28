@@ -12,49 +12,41 @@ export default function Experience({ updateKeyHeader }) {
 
     return (
         <Fade in={true}>
-            <div className="experience-container">
-                <section className="experience-section">
-                    <Typography fontSize={26} color="var(--text)">
-                        <Trans>Desenvolvedor Full-Stack</Trans>
-                    </Typography>
+            <section className="experience-container">
+                <Typography variant="h4" color="var(--secondary)" fontWeight="bold" mb={3}>
+                    <Trans>Experiências Profissionais</Trans>
+                </Typography>
 
-                    <Divider sx={{ backgroundColor: "var(--text)", mt: 0.5, mb: 2 }}/>
+                <div className="timeline">
+                    <div className="timeline-item">
+                        <div className="timeline-dot" />
+                        <div className="timeline-card">
+                            <Typography variant="h6" color="var(--secondary)" fontWeight="bold">
+                                <Trans>Desenvolvedor Full-Stack</Trans>
+                            </Typography>
+                            <Typography variant="subtitle2" color="var(--secondary)" mb={1}>
+                                <Trans>Samsung R&D Brasil | Campinas, São Paulo | Jun/2023 - Jun/2025</Trans>
+                            </Typography>
 
-                    <div className="job-information-box">
-                        <div className="info-section-job" style={{ maxWidth: 200 }}>
-                            <span style={{ fontWeight: "bold" }}>Samsung R&D Brasil</span><br/>
-                            <span><Trans>Estágio</Trans></span><br/>
-                            <span>Campinas, São Paulo</span><br/>
-                            <span>Jun/2023 - Jun/2025</span>
-                        </div>
+                            <Divider sx={{ backgroundColor: "rgba(255,255,255,0.15)", my: 1 }}/>
 
-                        <div className="info-section-job" style={{ paddingLeft: 10 }}>
-                            <ul className="ul-list">
-                                <li>
-                                    <Trans>Práticas de desenvolvimento full-stack, tendo como principal ferramenta para front-end o ReactJS, e o back-end sendo feito com PHP e Laravel.</Trans>
-                                </li>
-
-                                <li>
-                                    <Trans>Execução de Query no MySQL, utilização de NodeJS e Laravel para criação de API's.</Trans>
-                                </li>
-
-                                <li>
-                                    <Trans>Utilização de JIRA e Kanban para manusear atividades e tasks, assim como metas mapeadas.</Trans>
-                                </li>
-
-                                <li>
-                                    <Trans>Manutenção e criação de sistemas internos para a empresa, afim de melhorar a experiência dos colaboradores.</Trans>
-                                </li>
+                            <ul className="timeline-list">
+                                <li><Trans>Práticas de desenvolvimento full-stack, tendo como principal ferramenta para front-end o ReactJS, e o back-end sendo feito com PHP e Laravel.</Trans></li>
+                                <li><Trans>Execução de Query no MySQL, utilização de NodeJS e Laravel para criação de API's.</Trans></li>
+                                <li><Trans>Utilização de JIRA e Kanban para manusear atividades e tasks, assim como metas mapeadas.</Trans></li>
+                                <li><Trans>Manutenção e criação de sistemas internos para a empresa, afim de melhorar a experiência dos colaboradores.</Trans></li>
                             </ul>
-                        </div>
 
-                        <div className="info-section-job" style={{ paddingLeft: 10, maxWidth: 200 }}>
-                            <span style={{ fontWeight: "bold" }}><Trans>Competências</Trans></span><br/>
-                            <span>JavaScript, ReactJS, HTML & CSS, PHP, MySQL, NodeJS, Laravel, CodeIgniter, UX/UI, API Rest, JIRA</span>
+                            <Typography variant="body2" mt={1} fontWeight="bold" color="var(--secondary)">
+                                <Trans>Competências</Trans>:
+                            </Typography>
+                            <Typography variant="body2" color="var(--text)">
+                                JavaScript, ReactJS, HTML & CSS, PHP, MySQL, NodeJS, Laravel, CodeIgniter, UX/UI, API Rest, JIRA
+                            </Typography>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </Fade>
     );
 }

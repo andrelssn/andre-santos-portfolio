@@ -13,25 +13,6 @@ import MethodologiesSkills from "../../Components/Skills/MethodologiesSkills";
 import SoftPowerSkills from "../../Components/Skills/SoftPowerSkills";
 import MobileSkills from "../../Components/Skills/MobileSkills";
 
-// const tabSx = {
-//     "& .MuiTabs-indicator": {
-//         backgroundColor: "var(--secondary)",
-//     },
-//     "& .MuiButtonBase-root.MuiTab-root": {
-//         color: "#cecece",
-//         fontWeight: "bold",
-//         transition: "color 0.2s ease-in-out",
-//         "&:hover": {
-//             color: "var(--secondary)",
-//         },
-//         "&.Mui-selected": {
-//             color: "var(--secondary)",
-//             fontWeight: "bold",
-//             backgroundColor: "var(--test)"
-//         },
-//     },
-// };
-
 export default function Skills({ t, updateKeyHeader }) {
     const [star, setStar]   = React.useState(1);
     const [level, setLevel] = React.useState(<Trans>Iniciante</Trans>);
@@ -90,8 +71,6 @@ export default function Skills({ t, updateKeyHeader }) {
                         </span>
                     </Box>
                 </Box>
-
-                <br/>
 
                 <Typography className="stack-type-card">
                     Front-End

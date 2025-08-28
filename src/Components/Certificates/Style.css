@@ -35,7 +35,7 @@
 
 .select-div {
     margin: auto !important;
-    margin-top: 20px !important;
+    padding: 10px;
 }
 
 .img-certificates {
@@ -50,6 +50,5 @@
     margin: 20px !important;
     width: 90% !important;
     max-width: 800px !important;
-    border: 2px solid #bbbbbb !important;
     border-radius: 4px;
 }

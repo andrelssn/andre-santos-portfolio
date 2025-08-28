@@ -7,6 +7,7 @@ import "./Style.css";
 // Components
 import Portfolio from "../../Components/Projects/Portfolio";
 import FcCareer from "../../Components/Projects/FcCareer";
+import PetGallery from "../../Components/Projects/PetGallery";
 
 export default function Projects({ updateKeyHeader }) {
 
@@ -20,6 +21,8 @@ export default function Projects({ updateKeyHeader }) {
                 <Portfolio/>
 
                 <FcCareer/>
+
+                <PetGallery/>
             </nav>
         </Fade>
     );

@@ -1,35 +1,92 @@
 .experience-container {
-    justify-self: center !important;
-    width: 95% !important;
-    overflow: auto !important;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    color: var(--text);
+    animation: fadeIn 1s ease forwards;
 }
 
-.experience-section {
-    margin: auto;
-    padding: 20px 30px;
-    margin-top: 100px !important;
-    background-color: var(--background-light) !important;
-    border-radius: 15px;
-    overflow: auto !important;
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 2rem;
 }
 
-.experience-section span {
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--secondary2), transparent);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -22px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    background: var(--secondary2);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 147, 58, 0.6);
+}
+
+.timeline-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    padding: 1.5rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 163, 58, 0.35);
+    border-color: rgba(255, 163, 58, 0.4);
+}
+
+.timeline-list {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
     color: var(--text);
 }
 
-.job-information-box {
-    position: relative !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    display: flex !important;
-    align-items: center !important;
+.timeline-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
-.ul-list {
-    color: var(--text) !important;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.info-section-job {
-    flex: 1 !important;
-    min-width: 300px;
+@media (max-width: 900px) {
+    .timeline {
+        padding-left: 15px;
+    }
+
+    .timeline-dot {
+        left: -18px;
+    }
 }

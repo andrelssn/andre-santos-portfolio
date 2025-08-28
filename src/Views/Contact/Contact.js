@@ -18,27 +18,33 @@ export default function Contact({ updateKeyHeader }) {
     return (
         <Fade in={true}>
             <div className="contact-container">
-                <Box sx={{ mt: 15 }}>
-                    <section className="contact-section">
-                        <span><Trans>Email para contato</Trans> </span>andreluissilsan22@gmail.com
-                        <br/><br/>
+                <Box sx={{ mt: 15, display: "flex", flexDirection: "column", alignItems: "center", gap: 5 }}>
+                    <section className="contact-section contact-email">
+                        <Typography variant="h6" color="var(--text-secondary)" fontWeight="bold" gutterBottom>
+                            <Trans>Email para contato</Trans>
+                        </Typography>
+                        <Typography color="var(--text)" fontSize={16}>
+                            andreluissilsan22@gmail.com
+                        </Typography>
                         <a href="mailto:andreluissilsan22@gmail.com" className="email-anchor">
                             <Trans>Enviar e-mail</Trans>
                         </a>
                     </section>
 
-                    <section className="contact-section">
-                        <Typography color="var(--secondary)" fontWeight={"bold"} variant="h5">
+                    <section className="contact-section contact-socials">
+                        <Typography color="var(--secondary)" fontWeight="bold" variant="h5" gutterBottom>
                             <Trans>Redes Sociais</Trans>
                         </Typography>
 
-                        <IconButton sx={{ width: 150, height: 150 }} href="https://www.linkedin.com/in/andresantosdev/" title="linkedin">
-                            <LinkedInIcon sx={{ color: "#ffffff", fontSize: 120 }}/>
-                        </IconButton>
+                        <Box sx={{ display: "flex", gap: 4, flexWrap: "wrap", justifyContent: "center", mt: 2 }}>
+                            <IconButton className="social-btn" href="https://www.linkedin.com/in/andresantosdev/" title="LinkedIn">
+                                <LinkedInIcon />
+                            </IconButton>
 
-                        <IconButton sx={{ width: 150, height: 150 }} href="https://github.com/andrelssn" title="github">
-                            <GitHubIcon sx={{ color: "#ffffff", fontSize: 120 }}/>
-                        </IconButton>
+                            <IconButton className="social-btn" href="https://github.com/andrelssn" title="GitHub">
+                                <GitHubIcon />
+                            </IconButton>
+                        </Box>
                     </section>
                 </Box>
             </div>

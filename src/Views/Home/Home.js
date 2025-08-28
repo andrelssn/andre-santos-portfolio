@@ -24,7 +24,7 @@ export default function Home({ t, updateKeyHeader }) {
 
                 <Box className="content-home">
                     <section className="section-home">
-                        <Typography variant="h3" color="var(--secondary)" fontWeight={"bold"}>
+                        <Typography variant="h3">
                             <Trans>Seja Bem-Vindo!</Trans>
                         </Typography>
 
@@ -38,7 +38,8 @@ export default function Home({ t, updateKeyHeader }) {
                         </p>
 
                         <p>
-                            <Trans t={t}>Meus principais conhecimentos são com</Trans> <span style={{ color: "#b89f21" }}>JavaScript</span>, <span style={{ color: "#2d90d6" }}>ReactJS</span>, <span style={{ color: "#60788a" }}>PHP</span> <Trans t={t}>e</Trans> <span style={{ color: "#406e50" }}>NodeJS</span>,
+                            <Trans t={t}>Meus principais conhecimentos são com</Trans> <span style={{ color: "#b89f21" }}>JavaScript</span>, <span style={{ color: "#468ffcff" }}>TypeScript</span>, <span style={{ color: "#2d90d6" }}>ReactJS</span>,
+                            <span style={{ color: "#828affff" }}> Next</span>, <span style={{ color: "#60788a" }}>PHP</span> <Trans t={t}>e</Trans> <span style={{ color: "#406e50" }}>NodeJS</span>,
                             <Trans t={t}> mas clicando</Trans> <Link className="link-fix" to={"/skills"}><Trans t={t}>aqui</Trans></Link>, <Trans t={t}>você poderá ver o resumo completo de minhas qualificações. Com foco na construção de soluções escaláveis e de alto desempenho.
                             Comprometido com as melhores práticas de desenvolvimento e metodologias ágeis para entregar produtos de qualidade.</Trans>
                         </p>

@@ -58,11 +58,47 @@ export default function Portfolio(){
                             <Box sx={{ borderLeft: "1px solid var(--secondary)", p: 2, m: "5px 20px" }}>
                                 <ul>
                                     <li style={{ color: "var(--secondary)" }}>
+                                        <span>2.1.0</span>
+
+                                        <ul style={{ marginTop: 5 }}>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Nova Interface moderna</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Novas informações</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Removed DarkMode & LightMode</Trans>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <br/>
+
+                                    <li style={{ color: "var(--secondary)" }}>
+                                        <span>2.0.1</span>
+
+                                        <ul style={{ marginTop: 5 }}>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Otimização para Mobile</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Novas estrelas adicionadas</Trans>
+                                            </li>
+                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
+                                                <Trans>Melhoras na estrutura do código</Trans>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <br/>
+
+                                    <li style={{ color: "var(--secondary)" }}>
                                         <span>2.0.0</span>
 
                                         <ul style={{ marginTop: 5 }}>
                                             <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
-                                                <Trans>Nova iInterface moderna</Trans>
+                                                <Trans>Nova Interface moderna</Trans>
                                             </li>
                                             <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
                                                 <Trans>Melhor responsividade para mobile</Trans>

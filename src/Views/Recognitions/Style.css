@@ -1,6 +1,27 @@
-.projects-container {
-    justify-self: center !important;
-    width: 95% !important;
-    border-radius: 6px !important;
-    overflow: auto !important;
+.recognitions-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease forwards;
+}
+
+.recognitions-card {
+    width: 100%;
+    background-color: var(--page);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.recognitions-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(255, 176, 58, 0.6);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }

@@ -21,14 +21,14 @@ import { props, styleSx } from "../../Components/Skills/Styles/StylesSx";
 import { menuList } from "../MenuDrawer/MenuItem";
 
 // Components
-import ThemeSwitch from "../../Components/ThemeSwitch/ThemeSwitch";
+// import ThemeSwitch from "../../Components/ThemeSwitch/ThemeSwitch";
 
 export default function Header(params) {
     const {
         selectedTab,
         handleChange,
         theme,
-        toggleTheme,
+        // toggleTheme,
         isMobile
     } = params;
 
@@ -104,7 +104,7 @@ export default function Header(params) {
                         </TextField>
                     </Box>
 
-                    <ThemeSwitch toggleTheme={toggleTheme}/>
+                    {/* <ThemeSwitch toggleTheme={toggleTheme}/> */}
                 </Box>
             </Box>
         </Drawer>
@@ -153,6 +153,7 @@ export default function Header(params) {
                                             value={item.route}
                                             LinkComponent={Link}
                                             to={item.route}
+                                            disableTouchRipple
                                             iconPosition="start"
                                             sx={{ fontSize: 12 }}
                                         />
@@ -170,7 +171,7 @@ export default function Header(params) {
                         </IconButton> */}
 
                         <Box sx={{ display: "flex", mr: 5 }}>
-                            <ThemeSwitch toggleTheme={toggleTheme}/>
+                            {/* <ThemeSwitch toggleTheme={toggleTheme}/> */}
 
                             <Box sx={{ width: 160, ml: 2 }}>
                                 <TextField

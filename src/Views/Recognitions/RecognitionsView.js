@@ -15,8 +15,10 @@ export default function RecognitionsView({ updateKeyHeader }) {
 
     return (
         <Fade in={true}>
-            <nav className="projects-container">
-                <RecognitionsList/>
+            <nav className="recognitions-container">
+                <div className="recognitions-card">
+                    <RecognitionsList/>
+                </div>
             </nav>
         </Fade>
     );

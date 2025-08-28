@@ -1,56 +1,55 @@
-.skill-container {
-    position: relative !important;
-    margin: auto !important;
-    overflow: auto !important;
-}
-
-.certificates-container {
-    width: 100% !important;
-    position: relative !important;
-    margin: auto !important;
-    overflow: auto !important;
-    margin-top: 100px !important;
-}
-
-.nav-box {
-    flex: 1 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    color: #fff !important;
-    margin: 40px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 200px !important;
-    background-color: var(--header);
-    border-radius: 36px;
-}
-
-.icons-skills {
-    width: 100px !important;
-    margin-bottom: 20px;
+.recognitions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .select-div {
-    width: auto !important;
-    max-width: 500px !important;
-    margin: 20px;
+    width: 100%;
 }
 
-.img-certificates {
-    width: 100% !important;
-    max-width: 800px !important;
+.certificate-display {
+    background-color: var(--background-light);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.certificate-div {
-    position: relative !important;
-    justify-self: center !important;
-    display: grid;
-    margin: 20px !important;
-    width: 90% !important;
-    max-width: 800px !important;
-    border: 1px solid var(--border);
-    border-radius: 4px;
+.certificate-display:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.certificate-title {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 1rem !important;
+    text-align: center;
+}
+
+.img-certificate {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.img-certificate:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+    .certificate-display {
+        padding: 0.8rem;
+    }
+
+    .certificate-title {
+        font-size: 14px;
+    }
 }

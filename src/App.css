@@ -1,10 +1,10 @@
 @font-face {
   	font-family: 'Nunito';
-  	src: local('Nunito'), url('fonts/Nunito-ExtraBold.ttf') format('truetype');
+  	src: local('Nunito'), url('fonts/Nunito-Bold.ttf') format('truetype');
 }
 
 * {
-	font-family: 'Roboto-Regular', sans-serif !important;
+	font-family: 'Nunito', sans-serif !important;
 }
 
 

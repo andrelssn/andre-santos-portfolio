@@ -90,7 +90,7 @@ const resources = {
             "Ver Detalhes": "More Details",
             "Nova Fonte Adicionada": "New font added",
             "Background Animado": "Animated Background",
-            "Nova iInterface moderna": "New modern interface",
+            "Nova Interface moderna": "New modern interface",
             "Melhor responsividade para mobile": "Better responsiveness for mobile",
             "Padronização de cores": "Color standardization",
             "Novas informações": "New information",
@@ -98,7 +98,12 @@ const resources = {
             "Este é um projeto criado para fãs de EA Sports FC, em que o jogador poderá ter novas ideias de modo carreira no jogo.": "This is a project created for EA Sports FC fans, where players can get new Career Mode ideas in the game.",
             "Com o FC Career, você poderá gerar uma ideia de Modo Carreira, na qual poderá selecionar a liga e a equipe que deseja jogar. Com base na dificuldade da equipe, você terá objetivos específicos para alcançar durante a temporada com ela.": "With FC Career, you'll be able to generate a Career Mode scenario, where you can select the league and team you want to play with. Based on the team's difficulty, you'll have specific objectives to achieve throughout the season.",
             "Cada equipe tem seus objetivos já pré-definidos. Ao selecioná-la, também exibiremos informações do clube, como conquistas, recordes, entre outros. Além disso, serão mostrados os títulos a serem conquistados e as ambições cruciais do clube.": "Each team has its own predefined objectives. When you select a team, we will also display club information, such as achievements, records, and more. In addition, the titles to be won and the club's key ambitions will be shown.",
-            "Experiências Profissionais": "Professional Experience"
+            "Experiências Profissionais": "Professional Experience",
+            "Como desenvolvedor apaixonado por pets, criei uma aplicação que reúne informações sobre diversas raças de gatos, permitindo aos usuários explorar curiosidades, características e muito mais.": "As a developer passionate about pets, I created an application that gathers information about various cat breeds, allowing users to explore fun facts, characteristics, and much more.",
+            "Novos times e ligas + Tradução": "New teams and leagues + Translate",
+            "Otimização para Mobile": "Mobile Optimization",
+            "Novas estrelas adicionadas": "New Stars Added",
+            "Melhoras na estrutura do código": "Improvements to Code Structure"
         }
     }
 };

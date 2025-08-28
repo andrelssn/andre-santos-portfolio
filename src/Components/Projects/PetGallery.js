@@ -7,9 +7,9 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import "./Style.css";
 
 // Icon
-import fccareer from "../../images/fccareer.png";
+import pet from "../../images/petgallery.png";
 
-export default function FcCareer(){
+export default function PetGallery(){
     const [openLog, setOpenLog]     = React.useState(false);
     const [openAbout, setOpenAbout] = React.useState(false);
 
@@ -30,15 +30,15 @@ export default function FcCareer(){
             <section className="projects-section">
                 <div style={{ flexWrap: "wrap" }}>
                     <div style={{ display: "flex", alignItems: "center", position: "relative", minWidth: 250, flex: 1 }}>
-                        <img alt="webicon" src={fccareer} style={{ width: 30, marginRight: 5 }}/>
+                        <img alt="webicon" src={pet} style={{ width: 30, marginRight: 5 }}/>
                         <Typography fontSize={26} color="var(--text)">
-                            FC Career
+                            Pet Gallery
                         </Typography>
 
                         <Button
                             className="global-btn-style"
                             size="small"
-                            href="https://fc-career.vercel.app/"
+                            href="https://pet-gallery-challenge.vercel.app/"
                             endIcon={<LaunchIcon/>}
                             sx={{ ml: 1 }}
                         >
@@ -68,16 +68,6 @@ export default function FcCareer(){
                             <Box sx={{ borderLeft: "1px solid var(--secondary)", p: 2, m: "5px 20px" }}>
                                 <ul>
                                     <li style={{ color: "var(--secondary)" }}>
-                                        <span>1.1.0</span>
-
-                                        <ul style={{ marginTop: 5 }}>
-                                            <li style={{ color: "var(--text)", fontSize: 14, fontStyle: "italic" }}>
-                                                <Trans>Novos times e ligas + Tradução</Trans>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li style={{ color: "var(--secondary)" }}>
                                         <span>1.0.0</span>
 
                                         <ul style={{ marginTop: 5 }}>
@@ -104,23 +94,27 @@ export default function FcCareer(){
                                             Front-end
                                             <ul>
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>JavaScript</span>
+                                                    <span>TypeScript</span>
                                                 </li>
 
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>React JS</span>
+                                                    <span>Next (App Router)</span>
                                                 </li>
 
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>Material UI v6</span>
+                                                    <span>Material UI</span>
                                                 </li>
 
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>React Router Dom</span>
+                                                    <span>Tailwind CSS</span>
                                                 </li>
 
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>i18n (Translate)</span>
+                                                    <span>Axios</span>
+                                                </li>
+
+                                                <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
+                                                    <span>Jest</span>
                                                 </li>
 
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
@@ -143,23 +137,7 @@ export default function FcCareer(){
                                             Back-end
                                             <ul>
                                                 <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>PHP</span>
-                                                </li>
-
-                                                <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>Framework Laravel</span>
-                                                </li>
-
-                                                <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>API Rest</span>
-                                                </li>
-
-                                                <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>MySQL</span>
-                                                </li>
-
-                                                <li style={{ color: "var(--secondary)", ".span": { color: "var(--secondary)" } }}>
-                                                    <span>Railway</span>
+                                                    <span>API: TheCatApi</span>
                                                 </li>
                                             </ul>
                                         </li>
@@ -175,19 +153,7 @@ export default function FcCareer(){
 
                                     <p style={{ marginLeft: 20, marginTop: 10 }}>
                                         <Trans>
-                                            Este é um projeto criado para fãs de EA Sports FC, em que o jogador poderá ter novas ideias de modo carreira no jogo.
-                                        </Trans>
-                                    </p>
-
-                                    <p style={{ marginLeft: 20, marginTop: 10 }}>
-                                        <Trans>
-                                           Com o FC Career, você poderá gerar uma ideia de Modo Carreira, na qual poderá selecionar a liga e a equipe que deseja jogar. Com base na dificuldade da equipe, você terá objetivos específicos para alcançar durante a temporada com ela.
-                                        </Trans>
-                                    </p>
-
-                                    <p style={{ marginLeft: 20, marginTop: 10 }}>
-                                        <Trans>
-                                           Cada equipe tem seus objetivos já pré-definidos. Ao selecioná-la, também exibiremos informações do clube, como conquistas, recordes, entre outros. Além disso, serão mostrados os títulos a serem conquistados e as ambições cruciais do clube.
+                                            Como desenvolvedor apaixonado por pets, criei uma aplicação que reúne informações sobre diversas raças de gatos, permitindo aos usuários explorar curiosidades, características e muito mais.
                                         </Trans>
                                     </p>
                                 </div>
@@ -195,7 +161,7 @@ export default function FcCareer(){
                                 <br/>
 
                                 <div>
-                                    <Button className="global-btn-style" size="small" href="https://github.com/andrelssn/fc-career" endIcon={<LaunchIcon/>}>
+                                    <Button className="global-btn-style" size="small" href="https://github.com/andrelssn/pet-gallery-challenge" endIcon={<LaunchIcon/>}>
                                         <Trans>Repositório do Projeto</Trans>
                                     </Button>
                                 </div>

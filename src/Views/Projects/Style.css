@@ -8,6 +8,20 @@
     animation: fadeIn 1s ease forwards;
 }
 
+@media (min-width: 700px) {
+    .projects-component {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .projects-component {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -19,12 +33,4 @@
     font-size: 80px;
     position: absolute;
     pointer-events: none;
-}
-
-@media (max-width: 900px) {
-    .projects-component {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 1.5rem 1rem;
-    }
 }

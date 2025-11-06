@@ -19,7 +19,7 @@ export const ToolsTechList = [
     },
     {
         label: "Docker",
-        level: 1,
+        level: 2,
         img: docker
     },
     {
@@ -34,12 +34,12 @@ export const ToolsTechList = [
     },
     {
         label: "BitBucket",
-        level: 3,
+        level: 4,
         img: bitbucket
     },
     {
         label: "JIRA",
-        level: 3,
+        level: 4,
         img: jira
     },
 ]

@@ -35,7 +35,7 @@ export const SoftSkills = [
     },
     {
         label: <Trans>Pensamento Crítico</Trans>,
-        level: 4,
+        level: 5,
         img: criticalthink
     },
 ]

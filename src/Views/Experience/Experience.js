@@ -22,7 +22,63 @@ export default function Experience({ updateKeyHeader }) {
                         <div className="timeline-dot" />
                         <div className="timeline-card">
                             <Typography variant="h6" color="var(--secondary)" fontWeight="bold">
-                                <Trans>Desenvolvedor Full-Stack</Trans>
+                                <Trans>Desenvolvedor Full Stack Júnior</Trans>
+                            </Typography>
+                            <Typography variant="subtitle2" color="var(--secondary)" mb={1}>
+                                SimWorx Eng. P&D | Campinas, São Paulo - <Trans>Híbrido</Trans> | <Trans>Out</Trans>/2025 - <Trans>O momento</Trans>
+                            </Typography>
+
+                            <Divider sx={{ backgroundColor: "rgba(255,255,255,0.15)", my: 1 }}/>
+
+                            <ul className="timeline-list">
+                                <li>
+                                    <Trans>
+                                        Responsável pelo desenvolvimento Full Stack de aplicações críticas,
+                                        utilizando uma stack robusta: React/TypeScript para o Front-end e Python/Django para a construção de APIs Back-end escaláveis,
+                                        com persistência de dados em PostgreSQL.
+                                    </Trans>
+                                </li>
+                                <li>
+                                    <Trans>
+                                        Implementação de design systems (Tailwind CSS e Carbon Design System) para garantir a consistência visual,
+                                        responsividade e adesão a padrões de UI/UX em nível enterprise.
+                                    </Trans>
+                                </li>
+                                <li>
+                                    <Trans>
+                                        Otimização da performance do sistema por meio de soluções de caching com Redis,
+                                        gerenciamento de tarefas longas com Celery (processamento assíncrono),
+                                        e garantia da clareza das APIs através da documentação interativa com Swagger/OpenAPI.
+                                    </Trans>
+                                </li>
+                                <li>
+                                    <Trans>
+                                        Atuação em um ambiente Ágil, utilizando JIRA e a metodologia Kanban para o acompanhamento diário de tasks e atividades,
+                                        garantindo o cumprimento dos objetivos da sprint.
+                                    </Trans>
+                                </li>
+                                <li>
+                                    <Trans>
+                                        Colaboração direta no ciclo de vida de aplicativos de Engenharia,
+                                        convertendo requisitos complexos de clientes em soluções de software de alto impacto e valor agregado.
+                                    </Trans>
+                                </li>
+                            </ul>
+
+                            <Typography variant="body2" mt={1} fontWeight="bold" color="var(--secondary)">
+                                <Trans>Competências</Trans>:
+                            </Typography>
+                            <Typography variant="body2" color="var(--text)">
+                                Django, Tailwind CSS, Carbon Design System, Redis, Swagger/OpenAPI, Celery, Kanban.
+                            </Typography>
+                        </div>
+                    </div>
+
+                    <div className="timeline-item">
+                        <div className="timeline-dot" />
+                        <div className="timeline-card">
+                            <Typography variant="h6" color="var(--secondary)" fontWeight="bold">
+                                <Trans>Desenvolvedor Full Stack</Trans>
                             </Typography>
                             <Typography variant="subtitle2" color="var(--secondary)" mb={1}>
                                 <Trans>Samsung R&D Brasil | Campinas, São Paulo | Jun/2023 - Jun/2025</Trans>

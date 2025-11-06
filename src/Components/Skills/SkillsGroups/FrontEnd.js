@@ -14,12 +14,12 @@ import tailwind from "../../../images/frontend/tailwind.png";
 export const FrontEndList = [
     {
         label: "JavaScript",
-        level: 3,
+        level: 4,
         img: js
     },
     {
         label: "TypeScript",
-        level: 2,
+        level: 3,
         img: type
     },
     {
@@ -39,7 +39,7 @@ export const FrontEndList = [
     },
     {
         label: "Next",
-        level: 2,
+        level: 3,
         img: next
     },
     {
@@ -69,7 +69,7 @@ export const FrontEndList = [
     },
     {
         label: "Tailwind",
-        level: 2,
+        level: 4,
         img: tailwind
     },
 ]

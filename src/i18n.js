@@ -57,7 +57,11 @@ const resources = {
             "Selecione uma opção": "Select an option",
             "Selecionar": "Select",
             "Certificado": "Certificate",
-            "Desenvolvedor Full-Stack": "Full-Stack Developer",
+            "Desenvolvedor Full Stack": "Full Stack Developer",
+            "Desenvolvedor Full Stack Júnior": "Junior Full Stack Developer",
+            "O momento": "Present",
+            "Out": "Oct",
+            "Híbrido": "Hybrid",
             "Estágio": "Internship",
             "Até o momento": "At the moment",
             "Práticas de desenvolvimento full-stack, tendo como principal ferramenta para front-end o ReactJS, e o back-end sendo feito com PHP e Laravel.": "Full-stack development practices, with ReactJS as the primary front-end tool and PHP with Laravel for the back-end.",
@@ -103,7 +107,12 @@ const resources = {
             "Novos times e ligas + Tradução": "New teams and leagues + Translate",
             "Otimização para Mobile": "Mobile Optimization",
             "Novas estrelas adicionadas": "New Stars Added",
-            "Melhoras na estrutura do código": "Improvements to Code Structure"
+            "Melhoras na estrutura do código": "Improvements to Code Structure",
+            "Colaboração direta no ciclo de vida de aplicativos de Engenharia, convertendo requisitos complexos de clientes em soluções de software de alto impacto e valor agregado.": "Direct collaboration in the engineering application lifecycle, converting complex client requirements into high-impact, value-added software solutions.",
+            "Atuação em um ambiente Ágil, utilizando JIRA e a metodologia Kanban para o acompanhamento diário de tasks e atividades, garantindo o cumprimento dos objetivos da sprint.": "Working in an Agile environment, using JIRA and the Kanban methodology for daily tracking of tasks and activities, ensuring the achievement of sprint goals.",
+            "Otimização da performance do sistema por meio de soluções de caching com Redis, gerenciamento de tarefas longas com Celery (processamento assíncrono), e garantia da clareza das APIs através da documentação interativa com Swagger/OpenAPI.": "System performance optimization through caching solutions with Redis, long task management with Celery (asynchronous processing), and ensuring API clarity through interactive documentation with Swagger/OpenAPI.",
+            "Implementação de design systems (Tailwind CSS e Carbon Design System) para garantir a consistência visual, responsividade e adesão a padrões de UI/UX em nível enterprise.": "Implementation of design systems (Tailwind CSS and Carbon Design System) to ensure visual consistency, responsiveness, and adherence to enterprise-level UI/UX standards.",
+            "Responsável pelo desenvolvimento Full Stack de aplicações críticas, utilizando uma stack robusta: React/TypeScript para o Front-end e Python/Django para a construção de APIs Back-end escaláveis, com persistência de dados em PostgreSQL.": "Responsible for Full Stack development of critical applications, using a robust stack: React/TypeScript for the Front-end and Python/Django for building scalable Back-end APIs, with data persistence in PostgreSQL.",
         }
     }
 };

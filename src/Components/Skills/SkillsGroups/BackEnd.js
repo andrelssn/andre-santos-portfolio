@@ -27,22 +27,22 @@ export const BackEndList = [
     },
     {
         label: "API RESTful",
-        level: 3,
+        level: 4,
         img: api
     },
     {
         label: "CodeIgniter",
-        level: 2,
+        level: 3,
         img: codeigniter
     },
     {
         label: "PostgreSQL",
-        level: 2,
+        level: 4,
         img: postgre
     },
     {
         label: "MongoDB",
-        level: 3,
+        level: 4,
         img: mongo
     },
     {

@@ -7,45 +7,102 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/andresantosdev/",
 };
 
-export const skills = [
+export const currentStack = [
+  "React",
+  "TypeScript",
+  "Python",
+  "Django",
+  "PostgreSQL",
+  "Celery",
+  "Node.js",
+  "Docker",
+  "GitHub Actions",
+  "SonarQube",
+];
+
+export const skillGroups = [
   {
     key: "frontend",
-    items: ["React", "TypeScript", "JavaScript", "Next.js", "Vite", "Material UI"],
+    items: [
+      { label: "JavaScript", level: 4 },
+      { label: "TypeScript", level: 3 },
+      { label: "React", level: 4 },
+      { label: "Next.js", level: 3 },
+      { label: "Material UI", level: 5 },
+      { label: "Bootstrap", level: 2 },
+      { label: "UI/UX", level: 4 },
+      { label: "HTML5", level: 4 },
+      { label: "CSS3", level: 4 },
+      { label: "Tailwind CSS", level: 4 },
+    ],
   },
   {
     key: "backend",
-    items: ["Python", "Django", "FastAPI", "Node.js", "Express", "PHP", "Laravel", "CodeIgniter"],
-  },
-  {
-    key: "data",
-    items: ["PostgreSQL", "MySQL", "Celery", "Celery Beat", "REST APIs", "JWT"],
+    items: [
+      { label: "PHP", level: 3 },
+      { label: "Laravel", level: 3 },
+      { label: "Node.js", level: 2 },
+      { label: "Express.js", level: 2 },
+      { label: "REST APIs", level: 4 },
+      { label: "CodeIgniter", level: 3 },
+      { label: "PostgreSQL", level: 4 },
+      { label: "MongoDB", level: 4 },
+      { label: "MySQL", level: 4 },
+      { label: "Java", level: 2 },
+      { label: "Spring Boot", level: 1 },
+      { label: "C/C++", level: 2 },
+    ],
   },
   {
     key: "mobile",
-    items: ["React Native", "Expo"],
+    items: [
+      { label: "React Native", level: 2 },
+      { label: "Expo", level: 2 },
+      { label: "React Native Paper", level: 2 },
+    ],
   },
   {
-    key: "devops",
-    items: ["Docker", "GitHub Actions", "CI/CD", "Railway", "Vercel", "Linux", "SonarQube"],
+    key: "tools",
+    items: [
+      { label: "Git", level: 4 },
+      { label: "Linux", level: 2 },
+      { label: "Docker", level: 2 },
+      { label: "Kubernetes", level: 1 },
+      { label: "AWS", level: 1 },
+      { label: "Bitbucket", level: 4 },
+      { label: "Jira", level: 4 },
+    ],
   },
   {
-    key: "engineering",
-    items: ["SOLID", "Clean Code", "Design Patterns", "Refactoring", "Scrum", "Kanban"],
+    key: "methodologies",
+    items: [
+      { label: "Scrum", level: 4 },
+      { label: "Kanban", level: 4 },
+      { label: "Clean Architecture", level: 4 },
+      { label: "SOLID", level: 4 },
+      { label: "Clean Code", level: 4 },
+    ],
+  },
+  {
+    key: "softSkills",
+    items: [
+      { labelKey: "teamwork", level: 5 },
+      { labelKey: "fastLearning", level: 5 },
+      { labelKey: "proactivity", level: 5 },
+      { labelKey: "adaptability", level: 5 },
+      { labelKey: "problemSolving", level: 5 },
+      { labelKey: "criticalThinking", level: 5 },
+    ],
   },
 ];
 
 export const projects = [
   {
-    title: "L0gik — Lead Manager",
-    repo: "https://github.com/andrelssn/Lead-Manager",
-    tags: ["Next.js", "Node.js", "Express", "Prisma", "MySQL"],
-    descriptionKey: "leadManager",
-  },
-  {
-    title: "Task Manager API",
-    repo: "https://github.com/andrelssn/tasks-manager-api",
-    tags: ["FastAPI", "SQLModel", "Pytest", "GitHub Actions"],
-    descriptionKey: "taskManager",
+    title: "Personal Portfolio",
+    repo: "https://github.com/andrelssn/andre-santos-portfolio",
+    live: "https://andre-santos-dev.vercel.app/",
+    tags: ["React", "JavaScript", "Responsive UI", "i18n"],
+    descriptionKey: "portfolio",
   },
   {
     title: "Book Gallery",
@@ -53,6 +110,13 @@ export const projects = [
     secondaryRepo: "https://github.com/andrelssn/book-gallery-backend",
     tags: ["React", "Material UI", "Vite", "Laravel", "MySQL"],
     descriptionKey: "bookGallery",
+  },
+  {
+    title: "Pet Gallery",
+    repo: "https://github.com/andrelssn/pet-gallery-challenge",
+    live: "https://pet-gallery-challenge.vercel.app/",
+    tags: ["TypeScript", "Next.js", "Material UI", "Tailwind CSS", "TheCatAPI"],
+    descriptionKey: "petGallery",
   },
 ];
 
@@ -64,31 +128,32 @@ export const content = {
       skills: "Skills",
       projects: "Projects",
       education: "Education",
+      certifications: "Certificates",
       contact: "Contact",
     },
     hero: {
-      eyebrow: "Full-Stack Developer · Campinas, Brazil",
-      title: "I build reliable software from interface to API.",
+      greeting: "Hi, I'm André Santos.",
+      title: "Full-Stack Developer",
       description:
-        "I work across React/TypeScript frontends and Python/Django or Node.js backends, with experience in asynchronous processing, integrations, reporting, testing and CI/CD.",
-      primaryCta: "View experience",
+        "I develop web applications and APIs with React, TypeScript, Python/Django and Node.js. I enjoy solving real product problems, improving existing systems and writing software that remains easy to maintain as it grows.",
+      primaryCta: "About me",
       secondaryCta: "GitHub",
       contactCta: "Contact me",
-      availability: "Professional experience since 2023",
+      location: "Campinas, Brazil",
       language: "English B2",
       degree: "B.Sc. Computer Science",
     },
     about: {
       eyebrow: "About",
-      title: "Engineering with product context and maintainability in mind.",
+      title: "A little more about me",
       body:
-        "I'm a Computer Science graduate and Full-Stack Developer who enjoys turning requirements into practical, maintainable software. My experience spans internal R&D systems, engineering applications, APIs, asynchronous jobs, reports, integrations and deployment workflows.",
+        "I'm a Computer Science graduate and Full-Stack Developer with professional experience in R&D and engineering software. My work includes web interfaces, REST APIs, asynchronous jobs, integrations, report generation, automated tests and deployment workflows.",
       body2:
-        "I care about clear architecture, code quality, good developer experience and interfaces that are simple for people to use. I keep studying software engineering fundamentals while applying them to real projects.",
-      stats: [
-        { value: "2023", label: "Professional start" },
-        { value: "2", label: "Professional companies" },
-        { value: "B2", label: "English" },
+        "I started my professional journey at Samsung R&D Brazil and today work at SimWorx Eng. P&D. I keep strengthening my software engineering fundamentals while applying them to real products and production code.",
+      facts: [
+        "Professional experience since 2023",
+        "Based in Campinas, São Paulo",
+        "English B2 · Portuguese native",
       ],
     },
     experience: {
@@ -121,30 +186,42 @@ export const content = {
     },
     skillsSection: {
       eyebrow: "Skills",
-      title: "Technologies I use to ship software",
+      title: "Skills & technologies",
+      intro:
+        "The detailed skill view from my previous portfolio is back. The stars preserve the proficiency levels I had already mapped, while the current professional stack is highlighted separately above.",
+      current: "Current professional stack",
+      legend: ["Starter", "Basic", "Intermediate", "Advanced", "Proficient"],
       labels: {
         frontend: "Frontend",
-        backend: "Backend",
-        data: "Data & Async",
+        backend: "Backend, languages & data",
         mobile: "Mobile",
-        devops: "DevOps & Quality",
-        engineering: "Engineering",
+        tools: "Tools & technologies",
+        methodologies: "Engineering & methodologies",
+        softSkills: "Soft skills",
+      },
+      softLabels: {
+        teamwork: "Teamwork",
+        fastLearning: "Fast learning",
+        proactivity: "Proactivity",
+        adaptability: "Adaptability",
+        problemSolving: "Problem solving",
+        criticalThinking: "Critical thinking",
       },
     },
     projectsSection: {
       eyebrow: "Projects",
-      title: "Selected public work",
-      intro:
-        "A small selection of public repositories that shows different parts of my stack — full-stack product work, Python APIs and React/Laravel applications.",
+      title: "Selected projects",
+      intro: "Only the projects I want to keep highlighted in my portfolio.",
       descriptions: {
-        leadManager:
-          "Lead management system with a public capture form, campaign parameter tracking, admin dashboard and CSV export, built as a full-stack application.",
-        taskManager:
-          "FastAPI task-management backend with SQLModel, SQLite, automated tests with Pytest and a GitHub Actions pipeline.",
+        portfolio:
+          "My personal website, created to present my professional journey, skills, education and selected work in a responsive experience.",
         bookGallery:
           "Full-stack books and authors CRUD with a React/Material UI frontend and a Laravel/MySQL REST API backend.",
+        petGallery:
+          "Cat-breed discovery application built with TypeScript and Next.js, consuming TheCatAPI and focusing on reusable UI, responsiveness and user experience.",
       },
       source: "Source",
+      live: "Live project",
       frontend: "Frontend",
       backend: "Backend",
     },
@@ -161,9 +238,25 @@ export const content = {
       recognition:
         "Samsung R&D recognition for contribution to company growth during my internship period.",
     },
+    certifications: {
+      eyebrow: "Certificates",
+      title: "Courses & certificates",
+      intro:
+        "Select a course to view the original certificate image. All certificates that were shown in the previous portfolio are preserved here.",
+      selectLabel: "Choose certificate",
+      courses: [
+        "APIs Node.js, Express + MongoDB, SQL",
+        "Team Building",
+        "CodeIgniter Framework",
+        "PHP",
+        "SQL",
+        "Git & GitHub",
+        "WiseUp (English)",
+      ],
+    },
     contact: {
       eyebrow: "Contact",
-      title: "Let's build something useful.",
+      title: "Let's talk.",
       body:
         "If you'd like to talk about a Full-Stack role, software project or technical collaboration, feel free to reach out.",
       email: "Send email",
@@ -179,31 +272,32 @@ export const content = {
       skills: "Habilidades",
       projects: "Projetos",
       education: "Formação",
+      certifications: "Certificados",
       contact: "Contato",
     },
     hero: {
-      eyebrow: "Desenvolvedor Full-Stack · Campinas, Brasil",
-      title: "Construo software confiável da interface à API.",
+      greeting: "Olá, eu sou André Santos.",
+      title: "Desenvolvedor Full-Stack",
       description:
-        "Atuo com frontends em React/TypeScript e backends em Python/Django ou Node.js, com experiência em processamento assíncrono, integrações, relatórios, testes e CI/CD.",
-      primaryCta: "Ver experiência",
+        "Desenvolvo aplicações web e APIs com React, TypeScript, Python/Django e Node.js. Gosto de resolver problemas reais de produto, melhorar sistemas existentes e escrever software que continue fácil de manter conforme cresce.",
+      primaryCta: "Sobre mim",
       secondaryCta: "GitHub",
       contactCta: "Entrar em contato",
-      availability: "Experiência profissional desde 2023",
+      location: "Campinas, Brasil",
       language: "Inglês B2",
       degree: "Bacharel em Ciência da Computação",
     },
     about: {
       eyebrow: "Sobre",
-      title: "Engenharia com contexto de produto e manutenção em mente.",
+      title: "Um pouco mais sobre mim",
       body:
-        "Sou Bacharel em Ciência da Computação e Desenvolvedor Full-Stack. Gosto de transformar requisitos em software prático e sustentável. Minha experiência passa por sistemas internos de P&D, aplicações de engenharia, APIs, jobs assíncronos, relatórios, integrações e fluxos de deploy.",
+        "Sou Bacharel em Ciência da Computação e Desenvolvedor Full-Stack com experiência profissional em P&D e software de engenharia. Meu trabalho envolve interfaces web, APIs REST, jobs assíncronos, integrações, geração de relatórios, testes automatizados e fluxos de deploy.",
       body2:
-        "Valorizo arquitetura clara, qualidade de código, boa experiência de desenvolvimento e interfaces simples para quem usa o produto. Continuo aprofundando fundamentos de engenharia de software enquanto aplico esse conhecimento em projetos reais.",
-      stats: [
-        { value: "2023", label: "Início profissional" },
-        { value: "2", label: "Empresas na carreira" },
-        { value: "B2", label: "Inglês" },
+        "Iniciei minha trajetória profissional na Samsung R&D Brasil e hoje atuo na SimWorx Eng. P&D. Continuo aprofundando fundamentos de engenharia de software enquanto aplico esse conhecimento em produtos reais e código de produção.",
+      facts: [
+        "Experiência profissional desde 2023",
+        "Campinas, São Paulo",
+        "Inglês B2 · Português nativo",
       ],
     },
     experience: {
@@ -236,30 +330,42 @@ export const content = {
     },
     skillsSection: {
       eyebrow: "Habilidades",
-      title: "Tecnologias que uso para entregar software",
+      title: "Habilidades & tecnologias",
+      intro:
+        "A visualização detalhada do portfólio anterior voltou. As estrelas preservam os níveis de proficiência que eu já havia mapeado, enquanto a stack profissional atual fica destacada separadamente acima.",
+      current: "Stack profissional atual",
+      legend: ["Iniciante", "Básico", "Intermediário", "Avançado", "Proficiente"],
       labels: {
         frontend: "Frontend",
-        backend: "Backend",
-        data: "Dados & Assíncrono",
+        backend: "Backend, linguagens & dados",
         mobile: "Mobile",
-        devops: "DevOps & Qualidade",
-        engineering: "Engenharia",
+        tools: "Ferramentas & tecnologias",
+        methodologies: "Engenharia & metodologias",
+        softSkills: "Soft skills",
+      },
+      softLabels: {
+        teamwork: "Trabalho em equipe",
+        fastLearning: "Rápido aprendizado",
+        proactivity: "Proatividade",
+        adaptability: "Rápida adaptação",
+        problemSolving: "Solução de problemas",
+        criticalThinking: "Pensamento crítico",
       },
     },
     projectsSection: {
       eyebrow: "Projetos",
-      title: "Trabalhos públicos selecionados",
-      intro:
-        "Uma pequena seleção de repositórios públicos que mostra diferentes partes da minha stack — produto full-stack, APIs Python e aplicações React/Laravel.",
+      title: "Projetos selecionados",
+      intro: "Somente os projetos que quero manter em destaque no meu portfólio.",
       descriptions: {
-        leadManager:
-          "Sistema de gerenciamento de leads com formulário público, captura de parâmetros de campanha, painel administrativo e exportação CSV, desenvolvido como aplicação full-stack.",
-        taskManager:
-          "Backend de gerenciamento de tarefas em FastAPI com SQLModel, SQLite, testes automatizados com Pytest e pipeline no GitHub Actions.",
+        portfolio:
+          "Meu site pessoal, criado para apresentar trajetória profissional, habilidades, formação e trabalhos selecionados em uma experiência responsiva.",
         bookGallery:
           "CRUD full-stack de livros e autores com frontend em React/Material UI e backend REST em Laravel/MySQL.",
+        petGallery:
+          "Aplicação para explorar raças de gatos desenvolvida com TypeScript e Next.js, consumindo TheCatAPI e com foco em UI reutilizável, responsividade e experiência do usuário.",
       },
       source: "Código",
+      live: "Ver projeto",
       frontend: "Frontend",
       backend: "Backend",
     },
@@ -276,9 +382,25 @@ export const content = {
       recognition:
         "Reconhecimento da Samsung R&D pela contribuição ao crescimento da empresa durante o período de estágio.",
     },
+    certifications: {
+      eyebrow: "Certificados",
+      title: "Cursos & certificados",
+      intro:
+        "Selecione um curso para visualizar a imagem original do certificado. Todos os certificados apresentados no portfólio anterior foram preservados aqui.",
+      selectLabel: "Escolha um certificado",
+      courses: [
+        "APIs Node.js, Express + MongoDB, SQL",
+        "Team Building",
+        "CodeIgniter Framework",
+        "PHP",
+        "SQL",
+        "Git & GitHub",
+        "WiseUp (Inglês)",
+      ],
+    },
     contact: {
       eyebrow: "Contato",
-      title: "Vamos construir algo útil.",
+      title: "Vamos conversar.",
       body:
         "Se quiser conversar sobre uma vaga Full-Stack, projeto de software ou colaboração técnica, entre em contato.",
       email: "Enviar e-mail",

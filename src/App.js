@@ -1,6 +1,5 @@
 import React from "react";
 import { content, currentStack, profile, projects, skillGroups } from "./data/portfolio";
-import profileImage from "./images/andreimage.jpg";
 import avatarImage from "./images/andre.jpeg";
 import certificateApi from "./images/certificates/apis.jpg";
 import certificateCodeIgniter from "./images/certificates/codeigniter.jpg";
@@ -106,7 +105,6 @@ function App() {
           <div className="about-photo-column">
             <span className="eyebrow">{copy.about.eyebrow}</span>
             <h2>{copy.about.title}</h2>
-            <img src={profileImage} alt="André Santos" className="about-photo" />
           </div>
           <div className="section-body">
             <p>{copy.about.body}</p>
